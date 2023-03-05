@@ -1,0 +1,1825 @@
+<html class="jt-belize-theme chrome f-cmbnch f-dfnls f-drgdrp f-edtrds f-flngg f-fmedp f-frmti f-incsec f-lgcnfm f-moropt f-mpers f-nfnlz f-revupd f-rvwonb c-gb wf-allura-n4-active wf-dancingscript-n4-active wf-dynalight-n4-active wf-mrssaintdelafield-n4-active wf-firasans-n4-active wf-ptsans-n4-active wf-saira-n4-active wf-blinker-n4-active wf-ptsanscaption-n4-active wf-oswald-n4-active wf-sourcesanspro-n4-active upload-flow-ver4 ttc-icons-v2-exp ct-color-picker-test color-picker-dropdown f-ttc-recommended-modal ct-skip-template paper-size-a4 finalize-lang-sec page-finalize wf-bodonimt-n4-inactive wf-active">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-control" content="no-transform">
+	<title>Satish Dungarani</title>
+	<script>
+		(function () {
+			if (navigator && navigator.userAgent) {
+				var isMobile = navigator.userAgent.toLowerCase().indexOf("mobile") > -1;
+				var isIpad = navigator.userAgent.toLowerCase().indexOf("ipad") > -1;
+				if (!isIpad && isMobile && window.location.pathname) {
+					window.fetch = function () { };
+					window.location.pathname = window.location.pathname + "/mobile";
+				}
+			}
+		})();
+		function addNewRelic(applicationId) {
+			var y = Math.floor((Math.random() * 10) + 1); var x = y % 5; if (x == 0) {
+				window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) { function r(n) { if (!e[n]) { var o = e[n] = { exports: {} }; t[n][0].call(o.exports, function (e) { var o = t[n][1][e]; return r(o || e) }, o, o.exports) } return e[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < n.length; o++)r(n[o]); return r }({ 1: [function (t, e, n) { function r(t) { try { s.console && console.log(t) } catch (e) { } } var o, i = t("ee"), a = t(25), s = {}; try { o = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (s.console = !0, o.indexOf("dev") !== -1 && (s.dev = !0), o.indexOf("nr_dev") !== -1 && (s.nrDev = !0)) } catch (c) { } s.nrDev && i.on("internal-error", function (t) { r(t.stack) }), s.dev && i.on("fn-err", function (t, e, n) { r(n.stack) }), s.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(s, function (t, e) { return t }).join(", "))) }, {}], 2: [function (t, e, n) { function r(t, e, n, r, s) { try { l ? l -= 1 : o(s || new UncaughtException(t, e, n), !0) } catch (f) { try { i("ierr", [f, c.now(), !0]) } catch (d) { } } return "function" == typeof u && u.apply(this, a(arguments)) } function UncaughtException(t, e, n) { this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n } function o(t, e) { var n = e ? null : c.now(); i("err", [t, n]) } var i = t("handle"), a = t(26), s = t("ee"), c = t("loader"), f = t("gos"), u = window.onerror, d = !1, p = "nr@seenError", l = 0; c.features.err = !0, t(1), window.onerror = r; try { throw new Error } catch (h) { "stack" in h && (t(13), t(12), "addEventListener" in window && t(6), c.xhrWrappable && t(14), d = !0) } s.on("fn-start", function (t, e, n) { d && (l += 1) }), s.on("fn-err", function (t, e, n) { d && !n[p] && (f(n, p, function () { return !0 }), this.thrown = !0, o(n)) }), s.on("fn-end", function () { d && !this.thrown && l > 0 && (l -= 1) }), s.on("internal-error", function (t) { i("ierr", [t, c.now(), !0]) }) }, {}], 3: [function (t, e, n) { t("loader").features.ins = !0 }, {}], 4: [function (t, e, n) { function r() { L++, C = g.hash, this[u] = y.now() } function o() { L--, g.hash !== C && i(0, !0); var t = y.now(); this[h] = ~~this[h] + t - this[u], this[d] = t } function i(t, e) { E.emit("newURL", ["" + g, e]) } function a(t, e) { t.on(e, function () { this[e] = y.now() }) } var s = "-start", c = "-end", f = "-body", u = "fn" + s, d = "fn" + c, p = "cb" + s, l = "cb" + c, h = "jsTime", m = "fetch", v = "addEventListener", w = window, g = w.location, y = t("loader"); if (w[v] && y.xhrWrappable) { var x = t(10), b = t(11), E = t(8), O = t(6), R = t(13), P = t(7), T = t(14), N = t(9), M = t("ee"), S = M.get("tracer"); t(16), y.features.spa = !0; var C, L = 0; M.on(u, r), M.on(p, r), M.on(d, o), M.on(l, o), M.buffer([u, d, "xhr-done", "xhr-resolved"]), O.buffer([u]), R.buffer(["setTimeout" + c, "clearTimeout" + s, u]), T.buffer([u, "new-xhr", "send-xhr" + s]), P.buffer([m + s, m + "-done", m + f + s, m + f + c]), E.buffer(["newURL"]), x.buffer([u]), b.buffer(["propagate", p, l, "executor-err", "resolve" + s]), S.buffer([u, "no-" + u]), N.buffer(["new-jsonp", "cb-start", "jsonp-error", "jsonp-end"]), a(T, "send-xhr" + s), a(M, "xhr-resolved"), a(M, "xhr-done"), a(P, m + s), a(P, m + "-done"), a(N, "new-jsonp"), a(N, "jsonp-end"), a(N, "cb-start"), E.on("pushState-end", i), E.on("replaceState-end", i), w[v]("hashchange", i, !0), w[v]("load", i, !0), w[v]("popstate", function () { i(0, L > 1) }, !0) } }, {}], 5: [function (t, e, n) { function r(t) { } if (window.performance && window.performance.timing && window.performance.getEntriesByType) { var o = t("ee"), i = t("handle"), a = t(13), s = t(12), c = "learResourceTimings", f = "addEventListener", u = "resourcetimingbufferfull", d = "bstResource", p = "resource", l = "-start", h = "-end", m = "fn" + l, v = "fn" + h, w = "bstTimer", g = "pushState", y = t("loader"); y.features.stn = !0, t(8), "addEventListener" in window && t(6); var x = NREUM.o.EV; o.on(m, function (t, e) { var n = t[0]; n instanceof x && (this.bstStart = y.now()) }), o.on(v, function (t, e) { var n = t[0]; n instanceof x && i("bst", [n, e, this.bstStart, y.now()]) }), a.on(m, function (t, e, n) { this.bstStart = y.now(), this.bstType = n }), a.on(v, function (t, e) { i(w, [e, this.bstStart, y.now(), this.bstType]) }), s.on(m, function () { this.bstStart = y.now() }), s.on(v, function (t, e) { i(w, [e, this.bstStart, y.now(), "requestAnimationFrame"]) }), o.on(g + l, function (t) { this.time = y.now(), this.startPath = location.pathname + location.hash }), o.on(g + h, function (t) { i("bstHist", [location.pathname + location.hash, this.startPath, this.time]) }), f in window.performance && (window.performance["c" + c] ? window.performance[f](u, function (t) { i(d, [window.performance.getEntriesByType(p)]), window.performance["c" + c]() }, !1) : window.performance[f]("webkit" + u, function (t) { i(d, [window.performance.getEntriesByType(p)]), window.performance["webkitC" + c]() }, !1)), document[f]("scroll", r, { passive: !0 }), document[f]("keypress", r, !1), document[f]("click", r, !1) } }, {}], 6: [function (t, e, n) { function r(t) { for (var e = t; e && !e.hasOwnProperty(u);)e = Object.getPrototypeOf(e); e && o(e) } function o(t) { s.inPlace(t, [u, d], "-", i) } function i(t, e) { return t[1] } var a = t("ee").get("events"), s = t("wrap-function")(a, !0), c = t("gos"), f = XMLHttpRequest, u = "addEventListener", d = "removeEventListener"; e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (o(window), o(f.prototype)), a.on(u + "-start", function (t, e) { var n = t[1], r = c(n, "nr@wrapped", function () { function t() { if ("function" == typeof n.handleEvent) return n.handleEvent.apply(n, arguments) } var e = { object: t, "function": n }[typeof n]; return e ? s(e, "fn-", null, e.name || "anonymous") : n }); this.wrapped = t[1] = r }), a.on(d + "-start", function (t) { t[1] = this.wrapped || t[1] }) }, {}], 7: [function (t, e, n) { function r(t, e, n) { var r = t[e]; "function" == typeof r && (t[e] = function () { var t = i(arguments), e = {}; o.emit(n + "before-start", [t], e); var a; e[m] && e[m].dt && (a = e[m].dt); var s = r.apply(this, t); return o.emit(n + "start", [t, a], s), s.then(function (t) { return o.emit(n + "end", [null, t], s), t }, function (t) { throw o.emit(n + "end", [t], s), t }) }) } var o = t("ee").get("fetch"), i = t(26), a = t(25); e.exports = o; var s = window, c = "fetch-", f = c + "body-", u = ["arrayBuffer", "blob", "json", "text", "formData"], d = s.Request, p = s.Response, l = s.fetch, h = "prototype", m = "nr@context"; d && p && l && (a(u, function (t, e) { r(d[h], e, f), r(p[h], e, f) }), r(s, "fetch", c), o.on(c + "end", function (t, e) { var n = this; if (e) { var r = e.headers.get("content-length"); null !== r && (n.rxSize = r), o.emit(c + "done", [null, e], n) } else o.emit(c + "done", [t], n) })) }, {}], 8: [function (t, e, n) { var r = t("ee").get("history"), o = t("wrap-function")(r); e.exports = r; var i = window.history && window.history.constructor && window.history.constructor.prototype, a = window.history; i && i.pushState && i.replaceState && (a = i), o.inPlace(a, ["pushState", "replaceState"], "-") }, {}], 9: [function (t, e, n) { function r(t) { function e() { c.emit("jsonp-end", [], p), t.removeEventListener("load", e, !1), t.removeEventListener("error", n, !1) } function n() { c.emit("jsonp-error", [], p), c.emit("jsonp-end", [], p), t.removeEventListener("load", e, !1), t.removeEventListener("error", n, !1) } var r = t && "string" == typeof t.nodeName && "script" === t.nodeName.toLowerCase(); if (r) { var o = "function" == typeof t.addEventListener; if (o) { var a = i(t.src); if (a) { var u = s(a), d = "function" == typeof u.parent[u.key]; if (d) { var p = {}; f.inPlace(u.parent, [u.key], "cb-", p), t.addEventListener("load", e, !1), t.addEventListener("error", n, !1), c.emit("new-jsonp", [t.src], p) } } } } } function o() { return "addEventListener" in window } function i(t) { var e = t.match(u); return e ? e[1] : null } function a(t, e) { var n = t.match(p), r = n[1], o = n[3]; return o ? a(o, e[r]) : e[r] } function s(t) { var e = t.match(d); return e && e.length >= 3 ? { key: e[2], parent: a(e[1], window) } : { key: t, parent: window } } var c = t("ee").get("jsonp"), f = t("wrap-function")(c); if (e.exports = c, o()) { var u = /[?&](?:callback|cb)=([^&#]+)/, d = /(.*)\.([^.]+)/, p = /^(\w+)(\.|$)(.*)$/, l = ["appendChild", "insertBefore", "replaceChild"]; Node && Node.prototype && Node.prototype.appendChild ? f.inPlace(Node.prototype, l, "dom-") : (f.inPlace(HTMLElement.prototype, l, "dom-"), f.inPlace(HTMLHeadElement.prototype, l, "dom-"), f.inPlace(HTMLBodyElement.prototype, l, "dom-")), c.on("dom-start", function (t) { r(t[0]) }) } }, {}], 10: [function (t, e, n) { var r = t("ee").get("mutation"), o = t("wrap-function")(r), i = NREUM.o.MO; e.exports = r, i && (window.MutationObserver = function (t) { return this instanceof i ? new i(o(t, "fn-")) : i.apply(this, arguments) }, MutationObserver.prototype = i.prototype) }, {}], 11: [function (t, e, n) { function r(t) { var e = a.context(), n = s(t, "executor-", e), r = new f(n); return a.context(r).getCtx = function () { return e }, a.emit("new-promise", [r, e], e), r } function o(t, e) { return e } var i = t("wrap-function"), a = t("ee").get("promise"), s = i(a), c = t(25), f = NREUM.o.PR; e.exports = a, f && (window.Promise = r, ["all", "race"].forEach(function (t) { var e = f[t]; f[t] = function (n) { function r(t) { return function () { a.emit("propagate", [null, !o], i), o = o || !t } } var o = !1; c(n, function (e, n) { Promise.resolve(n).then(r("all" === t), r(!1)) }); var i = e.apply(f, arguments), s = f.resolve(i); return s } }), ["resolve", "reject"].forEach(function (t) { var e = f[t]; f[t] = function (t) { var n = e.apply(f, arguments); return t !== n && a.emit("propagate", [t, !0], n), n } }), f.prototype["catch"] = function (t) { return this.then(null, t) }, f.prototype = Object.create(f.prototype, { constructor: { value: r } }), c(Object.getOwnPropertyNames(f), function (t, e) { try { r[e] = f[e] } catch (n) { } }), a.on("executor-start", function (t) { t[0] = s(t[0], "resolve-", this), t[1] = s(t[1], "resolve-", this) }), a.on("executor-err", function (t, e, n) { t[1](n) }), s.inPlace(f.prototype, ["then"], "then-", o), a.on("then-start", function (t, e) { this.promise = e, t[0] = s(t[0], "cb-", this), t[1] = s(t[1], "cb-", this) }), a.on("then-end", function (t, e, n) { this.nextPromise = n; var r = this.promise; a.emit("propagate", [r, !0], n) }), a.on("cb-end", function (t, e, n) { a.emit("propagate", [n, !0], this.nextPromise) }), a.on("propagate", function (t, e, n) { this.getCtx && !e || (this.getCtx = function () { if (t instanceof Promise) var e = a.context(t); return e && e.getCtx ? e.getCtx() : this }) }), r.toString = function () { return "" + f }) }, {}], 12: [function (t, e, n) { var r = t("ee").get("raf"), o = t("wrap-function")(r), i = "equestAnimationFrame"; e.exports = r, o.inPlace(window, ["r" + i, "mozR" + i, "webkitR" + i, "msR" + i], "raf-"), r.on("raf-start", function (t) { t[0] = o(t[0], "fn-") }) }, {}], 13: [function (t, e, n) { function r(t, e, n) { t[0] = a(t[0], "fn-", null, n) } function o(t, e, n) { this.method = n, this.timerDuration = isNaN(t[1]) ? 0 : +t[1], t[0] = a(t[0], "fn-", this, n) } var i = t("ee").get("timer"), a = t("wrap-function")(i), s = "setTimeout", c = "setInterval", f = "clearTimeout", u = "-start", d = "-"; e.exports = i, a.inPlace(window, [s, "setImmediate"], s + d), a.inPlace(window, [c], c + d), a.inPlace(window, [f, "clearImmediate"], f + d), i.on(c + u, r), i.on(s + u, o) }, {}], 14: [function (t, e, n) { function r(t, e) { d.inPlace(e, ["onreadystatechange"], "fn-", s) } function o() { var t = this, e = u.context(t); t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, g, "fn-", s) } function i(t) { y.push(t), h && (b ? b.then(a) : v ? v(a) : (E = -E, O.data = E)) } function a() { for (var t = 0; t < y.length; t++)r([], y[t]); y.length && (y = []) } function s(t, e) { return e } function c(t, e) { for (var n in t) e[n] = t[n]; return e } t(6); var f = t("ee"), u = f.get("xhr"), d = t("wrap-function")(u), p = NREUM.o, l = p.XHR, h = p.MO, m = p.PR, v = p.SI, w = "readystatechange", g = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"], y = []; e.exports = u; var x = window.XMLHttpRequest = function (t) { var e = new l(t); try { u.emit("new-xhr", [e], e), e.addEventListener(w, o, !1) } catch (n) { try { u.emit("internal-error", [n]) } catch (r) { } } return e }; if (c(l, x), x.prototype = l.prototype, d.inPlace(x.prototype, ["open", "send"], "-xhr-", s), u.on("send-xhr-start", function (t, e) { r(t, e), i(e) }), u.on("open-xhr-start", r), h) { var b = m && m.resolve(); if (!v && !m) { var E = 1, O = document.createTextNode(E); new h(a).observe(O, { characterData: !0 }) } } else f.on("fn-end", function (t) { t[0] && t[0].type === w || a() }) }, {}], 15: [function (t, e, n) { function r(t) { if (!i(t)) return null; var e = window.NREUM; if (!e.loader_config) return null; var n = (e.loader_config.accountID || "").toString() || null, r = (e.loader_config.agentID || "").toString() || null, s = (e.loader_config.trustKey || "").toString() || null; if (!n || !r) return null; var c = a.generateCatId(), f = a.generateCatId(), u = Date.now(), d = o(c, f, u, n, r, s); return { header: d, guid: c, traceId: f, timestamp: u } } function o(t, e, n, r, o, i) { var a = "btoa" in window && "function" == typeof window.btoa; if (!a) return null; var s = { v: [0, 1], d: { ty: "Browser", ac: r, ap: o, id: t, tr: e, ti: n } }; return i && r !== i && (s.d.tk = i), btoa(JSON.stringify(s)) } function i(t) { var e = !1, n = !1, r = {}; if ("init" in NREUM && "distributed_tracing" in NREUM.init && (r = NREUM.init.distributed_tracing, n = !!r.enabled), n) if (t.sameOrigin) e = !0; else if (r.allowed_origins instanceof Array) for (var o = 0; o < r.allowed_origins.length; o++) { var i = s(r.allowed_origins[o]); if (t.hostname === i.hostname && t.protocol === i.protocol && t.port === i.port) { e = !0; break } } return n && e } var a = t(23), s = t(17); e.exports = { generateTracePayload: r, shouldGenerateTrace: i } }, {}], 16: [function (t, e, n) { function r(t) { var e = this.params, n = this.metrics; if (!this.ended) { this.ended = !0; for (var r = 0; r < p; r++)t.removeEventListener(d[r], this.listener, !1); e.aborted || (n.duration = a.now() - this.startTime, this.loadCaptureCalled || 4 !== t.readyState ? null == e.status && (e.status = 0) : i(this, t), n.cbTime = this.cbTime, u.emit("xhr-done", [t], t), s("xhr", [e, n, this.startTime])) } } function o(t, e) { var n = c(e), r = t.params; r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.parsedOrigin = c(e), t.sameOrigin = t.parsedOrigin.sameOrigin } function i(t, e) { t.params.status = e.status; var n = v(e, t.lastSize); if (n && (t.metrics.rxSize = n), t.sameOrigin) { var r = e.getResponseHeader("X-NewRelic-App-Data"); r && (t.params.cat = r.split(", ").pop()) } t.loadCaptureCalled = !0 } var a = t("loader"); if (a.xhrWrappable) { var s = t("handle"), c = t(17), f = t(15).generateTracePayload, u = t("ee"), d = ["load", "error", "abort", "timeout"], p = d.length, l = t("id"), h = t(21), m = t(20), v = t(18), w = window.XMLHttpRequest; a.features.xhr = !0, t(14), t(7), u.on("new-xhr", function (t) { var e = this; e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, e.loadCaptureCalled = !1, t.addEventListener("load", function (n) { i(e, t) }, !1), h && (h > 34 || h < 10) || window.opera || t.addEventListener("progress", function (t) { e.lastSize = t.loaded }, !1) }), u.on("open-xhr-start", function (t) { this.params = { method: t[0] }, o(this, t[1]), this.metrics = {} }), u.on("open-xhr-end", function (t, e) { "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid); var n = f(this.parsedOrigin); n && n.header && (e.setRequestHeader("newrelic", n.header), this.dt = n) }), u.on("send-xhr-start", function (t, e) { var n = this.metrics, r = t[0], o = this; if (n && r) { var i = m(r); i && (n.txSize = i) } this.startTime = a.now(), this.listener = function (t) { try { "abort" !== t.type || o.loadCaptureCalled || (o.params.aborted = !0), ("load" !== t.type || o.called === o.totalCbs && (o.onloadCalled || "function" != typeof e.onload)) && o.end(e) } catch (n) { try { u.emit("internal-error", [n]) } catch (r) { } } }; for (var s = 0; s < p; s++)e.addEventListener(d[s], this.listener, !1) }), u.on("xhr-cb-time", function (t, e, n) { this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n) }), u.on("xhr-load-added", function (t, e) { var n = "" + l(t) + !!e; this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1) }), u.on("xhr-load-removed", function (t, e) { var n = "" + l(t) + !!e; this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1) }), u.on("addEventListener-end", function (t, e) { e instanceof w && "load" === t[0] && u.emit("xhr-load-added", [t[1], t[2]], e) }), u.on("removeEventListener-end", function (t, e) { e instanceof w && "load" === t[0] && u.emit("xhr-load-removed", [t[1], t[2]], e) }), u.on("fn-start", function (t, e, n) { e instanceof w && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = a.now())) }), u.on("fn-end", function (t, e) { this.xhrCbStart && u.emit("xhr-cb-time", [a.now() - this.xhrCbStart, this.onload, e], e) }), u.on("fetch-before-start", function (t) { var e, n = t[1] || {}; "string" == typeof t[0] ? e = t[0] : t[0] && t[0].url && (e = t[0].url), e && (this.parsedOrigin = c(e), this.sameOrigin = this.parsedOrigin.sameOrigin); var r = f(this.parsedOrigin); if (r && r.header) { var o = r.header; if ("string" == typeof t[0]) { var i = {}; for (var a in n) i[a] = n[a]; i.headers = new Headers(n.headers || {}), i.headers.set("newrelic", o), this.dt = r, t.length > 1 ? t[1] = i : t.push(i) } else t[0] && t[0].headers && (t[0].headers.append("newrelic", o), this.dt = r) } }) } }, {}], 17: [function (t, e, n) { var r = {}; e.exports = function (t) { if (t in r) return r[t]; var e = document.createElement("a"), n = window.location, o = {}; e.href = t, o.port = e.port; var i = e.href.split("://"); !o.port && i[1] && (o.port = i[1].split("/")[0].split("@").pop().split(":")[1]), o.port && "0" !== o.port || (o.port = "https" === i[0] ? "443" : "80"), o.hostname = e.hostname || n.hostname, o.pathname = e.pathname, o.protocol = i[0], "/" !== o.pathname.charAt(0) && (o.pathname = "/" + o.pathname); var a = !e.protocol || ":" === e.protocol || e.protocol === n.protocol, s = e.hostname === document.domain && e.port === n.port; return o.sameOrigin = a && (!e.hostname || s), "/" === o.pathname && (r[t] = o), o } }, {}], 18: [function (t, e, n) { function r(t, e) { var n = t.responseType; return "json" === n && null !== e ? e : "arraybuffer" === n || "blob" === n || "json" === n ? o(t.response) : "text" === n || "document" === n || "" === n || void 0 === n ? o(t.responseText) : void 0 } var o = t(20); e.exports = r }, {}], 19: [function (t, e, n) { function r() { } function o(t, e, n) { return function () { return i(t, [f.now()].concat(s(arguments)), e ? null : this, n), e ? void 0 : this } } var i = t("handle"), a = t(25), s = t(26), c = t("ee").get("tracer"), f = t("loader"), u = NREUM; "undefined" == typeof window.newrelic && (newrelic = u); var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], p = "api-", l = p + "ixn-"; a(d, function (t, e) { u[e] = o(p + e, !0, "api") }), u.addPageAction = o(p + "addPageAction", !0), u.setCurrentRouteName = o(p + "routeName", !0), e.exports = newrelic, u.interaction = function () { return (new r).get() }; var h = r.prototype = { createTracer: function (t, e) { var n = {}, r = this, o = "function" == typeof e; return i(l + "tracer", [f.now(), t, n], r), function () { if (c.emit((o ? "" : "no-") + "fn-start", [f.now(), r, o], n), o) try { return e.apply(this, arguments) } catch (t) { throw c.emit("fn-err", [arguments, this, t], n), t } finally { c.emit("fn-end", [f.now()], n) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) { h[e] = o(l + e) }), newrelic.noticeError = function (t, e) { "string" == typeof t && (t = new Error(t)), i("err", [t, f.now(), !1, e]) } }, {}], 20: [function (t, e, n) { e.exports = function (t) { if ("string" == typeof t && t.length) return t.length; if ("object" == typeof t) { if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength; if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size; if (!("undefined" != typeof FormData && t instanceof FormData)) try { return JSON.stringify(t).length } catch (e) { return } } } }, {}], 21: [function (t, e, n) { var r = 0, o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/); o && (r = +o[1]), e.exports = r }, {}], 22: [function (t, e, n) { function r(t, e) { var n = t.getEntries(); n.forEach(function (t) { "first-paint" === t.name ? c("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && c("timing", ["fcp", Math.floor(t.startTime)]) }) } function o(t, e) { var n = t.getEntries(); n.length > 0 && c("lcp", [n[n.length - 1]]) } function i(t) { if (t instanceof u && !p) { var e, n = Math.round(t.timeStamp); e = n > 1e12 ? Date.now() - n : f.now() - n, p = !0, c("timing", ["fi", n, { type: t.type, fid: e }]) } } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var a, s, c = t("handle"), f = t("loader"), u = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { a = new PerformanceObserver(r), s = new PerformanceObserver(o); try { a.observe({ entryTypes: ["paint"] }), s.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (d) { } } if ("addEventListener" in document) { var p = !1, l = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; l.forEach(function (t) { document.addEventListener(t, i, !1) }) } } }, {}], 23: [function (t, e, n) { function r() { function t() { return e ? 15 & e[n++] : 16 * Math.random() | 0 } var e = null, n = 0, r = window.crypto || window.msCrypto; r && r.getRandomValues && (e = r.getRandomValues(new Uint8Array(31))); for (var o, i = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", a = "", s = 0; s < i.length; s++)o = i[s], "x" === o ? a += t().toString(16) : "y" === o ? (o = 3 & t() | 8, a += o.toString(16)) : a += o; return a } function o() { function t() { return e ? 15 & e[n++] : 16 * Math.random() | 0 } var e = null, n = 0, r = window.crypto || window.msCrypto; r && r.getRandomValues && Uint8Array && (e = r.getRandomValues(new Uint8Array(31))); for (var o = [], i = 0; i < 16; i++)o.push(t().toString(16)); return o.join("") } e.exports = { generateUuid: r, generateCatId: o } }, {}], 24: [function (t, e, n) { function r(t, e) { if (!o) return !1; if (t !== o) return !1; if (!e) return !0; if (!i) return !1; for (var n = i.split("."), r = e.split("."), a = 0; a < r.length; a++)if (r[a] !== n[a]) return !1; return !0 } var o = null, i = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var s = navigator.userAgent, c = s.match(a); c && s.indexOf("Chrome") === -1 && s.indexOf("Chromium") === -1 && (o = "Safari", i = c[1]) } e.exports = { agent: o, version: i, match: r } }, {}], 25: [function (t, e, n) { function r(t, e) { var n = [], r = "", i = 0; for (r in t) o.call(t, r) && (n[i] = e(r, t[r]), i += 1); return n } var o = Object.prototype.hasOwnProperty; e.exports = r }, {}], 26: [function (t, e, n) { function r(t, e, n) { e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0); for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o); ++r < o;)i[r] = t[e + r]; return i } e.exports = r }, {}], 27: [function (t, e, n) { e.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (t, e, n) { function r() { } function o(t) { function e(t) { return t && t instanceof r ? t : t ? c(t, s, i) : i() } function n(n, r, o, i) { if (!p.aborted || i) { t && t(n, r, o); for (var a = e(o), s = m(n), c = s.length, f = 0; f < c; f++)s[f].apply(a, r); var d = u[y[n]]; return d && d.push([x, n, r, a]), a } } function l(t, e) { g[t] = m(t).concat(e) } function h(t, e) { var n = g[t]; if (n) for (var r = 0; r < n.length; r++)n[r] === e && n.splice(r, 1) } function m(t) { return g[t] || [] } function v(t) { return d[t] = d[t] || o(n) } function w(t, e) { f(t, function (t, n) { e = e || "feature", y[n] = e, e in u || (u[e] = []) }) } var g = {}, y = {}, x = { on: l, addEventListener: l, removeEventListener: h, emit: n, get: v, listeners: m, context: e, buffer: w, abort: a, aborted: !1 }; return x } function i() { return new r } function a() { (u.api || u.feature) && (p.aborted = !0, u = p.backlog = {}) } var s = "nr@context", c = t("gos"), f = t(25), u = {}, d = {}, p = e.exports = o(); p.backlog = u }, {}], gos: [function (t, e, n) { function r(t, e, n) { if (o.call(t, e)) return t[e]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(t, e, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return t[e] = r, r } var o = Object.prototype.hasOwnProperty; e.exports = r }, {}], handle: [function (t, e, n) { function r(t, e, n, r) { o.buffer([t], r), o.emit(t, e, n) } var o = t("ee").get("handle"); e.exports = r, r.ee = o }, {}], id: [function (t, e, n) { function r(t) { var e = typeof t; return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function () { return o++ }) } var o = 1, i = "nr@id", a = t("gos"); e.exports = r }, {}], loader: [function (t, e, n) { function r() { if (!E++) { var t = b.info = NREUM.info, e = l.getElementsByTagName("script")[0]; if (setTimeout(u.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return u.abort(); f(y, function (e, n) { t[e] || (t[e] = n) }), c("mark", ["onload", a() + b.offset], null, "api"); var n = l.createElement("script"); n.src = "https://" + t.agent, e.parentNode.insertBefore(n, e) } } function o() { "complete" === l.readyState && i() } function i() { c("mark", ["domContent", a() + b.offset], null, "api") } function a() { return O.exists && performance.now ? Math.round(performance.now()) : (s = Math.max((new Date).getTime(), s)) - b.offset } var s = (new Date).getTime(), c = t("handle"), f = t(25), u = t("ee"), d = t(24), p = window, l = p.document, h = "addEventListener", m = "attachEvent", v = p.XMLHttpRequest, w = v && v.prototype; NREUM.o = { ST: setTimeout, SI: p.setImmediate, CT: clearTimeout, XHR: v, REQ: p.Request, EV: p.Event, PR: p.Promise, MO: p.MutationObserver }; var g = "" + location, y = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-spa-1167.min.js" }, x = v && w && w[h] && !/CriOS/.test(navigator.userAgent), b = e.exports = { offset: s, now: a, origin: g, features: {}, xhrWrappable: x, userAgent: d }; t(19), t(22), l[h] ? (l[h]("DOMContentLoaded", i, !1), p[h]("load", r, !1)) : (l[m]("onreadystatechange", o), p[m]("onload", r)), c("mark", ["firstbyte", s], null, "api"); var E = 0, O = t(27) }, {}], "wrap-function": [function (t, e, n) { function r(t) { return !(t && t instanceof Function && t.apply && !t[a]) } var o = t("ee"), i = t(26), a = "nr@original", s = Object.prototype.hasOwnProperty, c = !1; e.exports = function (t, e) { function n(t, e, n, o) { function nrWrapper() { var r, a, s, c; try { a = this, r = i(arguments), s = "function" == typeof n ? n(r, a) : n || {} } catch (f) { p([f, "", [r, a, o], s]) } u(e + "start", [r, a, o], s); try { return c = t.apply(a, r) } catch (d) { throw u(e + "err", [r, a, d], s), d } finally { u(e + "end", [r, a, c], s) } } return r(t) ? t : (e || (e = ""), nrWrapper[a] = t, d(t, nrWrapper), nrWrapper) } function f(t, e, o, i) { o || (o = ""); var a, s, c, f = "-" === o.charAt(0); for (c = 0; c < e.length; c++)s = e[c], a = t[s], r(a) || (t[s] = n(a, f ? s + o : o, i, s)) } function u(n, r, o) { if (!c || e) { var i = c; c = !0; try { t.emit(n, r, o, e) } catch (a) { p([a, n, r, o]) } c = i } } function d(t, e) { if (Object.defineProperty && Object.keys) try { var n = Object.keys(t); return n.forEach(function (n) { Object.defineProperty(e, n, { get: function () { return t[n] }, set: function (e) { return t[n] = e, e } }) }), e } catch (r) { p([r]) } for (var o in t) s.call(t, o) && (e[o] = t[o]); return e } function p(e) { try { t.emit("internal-error", e) } catch (n) { } } return t || (t = o), n.inPlace = f, n.flag = a, n } }, {}] }, {}, ["loader", 2, 16, 5, 3, 4]);
+				; NREUM.loader_config = { accountID: "1160914", trustKey: "1160914", agentID: "16429473", licenseKey: "5000203576", applicationID: applicationId }
+					; NREUM.info = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", licenseKey: "5000203576", applicationID: applicationId, sa: 1 }
+			}
+		}
+		addNewRelic(109431365);
+		function UpdateHiwContainerHeight() {
+			if ('muk' != "mes") {
+				var bodyHeight = window.innerHeight,
+					headerHeight = document.getElementById('hiwHeader').offsetHeight,
+					footerHeight = document.getElementById('footer') ? document.getElementById('footer').offsetHeight : 0;
+				var hiwContainerHeight = bodyHeight - (headerHeight + footerHeight);
+				document.getElementById("contentHowItWorks").style.height = hiwContainerHeight + "px";
+			}
+		}
+
+	</script>
+	<link rel="icon" type="image/png" href="https://intlphotos.blob.core.windows.net/photos/gb/a11b3827-1e99-4cfe-8147-7eb43a3f6b48.jpeg">
+	<link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap" as="font" crossorigin="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&amp;family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600;1,800&amp;display=swap" rel="stylesheet" media="all" onload="this.media='all'">
+	<link rel="preload" href="/build-cv/build/rwzv2/stylesheets/uk/main-1.0.0.287.css" as="stylesheet">
+	<script>
+		if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+			if (!String.prototype.startsWith) {
+				String.prototype.startsWith = function (searchString, position) {
+					position = position || 0;
+					return this.indexOf(searchString, position) === position;
+				};
+			}
+			if (!String.prototype.endsWith) {
+				String.prototype.endsWith = function (search, this_len) {
+					if (this_len === undefined || this_len > this.length) {
+						this_len = this.length;
+					}
+					return this.substring(this_len - search.length, this_len) === search;
+				};
+			}
+			document.write(' <script src="/blobcontent/intl/scripts/browser-polyfill.min.js"><\/script>');
+            document.write('<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"><\/script>');
+    }
+
+	</script>
+	<link href="https://www.myperfectcv.co.uk/build-cv/build/rwzv2/stylesheets/uk/main-1.0.0.287.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura%7CDancing+Script%7CDynalight%7CMrs+Saint+Delafield%7CFira+Sans%7CPT+Sans%7CSaira%7CBlinker%7CPT+Sans+Caption%7CBodoni+MT%7COswald%7CSource+Sans+Pro" media="all">
+	<meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+	<script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/969244743/?random=1677939474705&amp;cv=11&amp;fst=1677939474705&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3310&amp;u_w=1536&amp;u_h=864&amp;hn=www.googleadservices.com&amp;frm=0&amp;url=https%3A%2F%2Fwww.myperfectcv.co.uk%2Fbuild-cv%2Ffinal-cv&amp;ref=https%3A%2F%2Fwww.myperfectcv.co.uk%2Fcv%2Fexamples%2Fwarehousing%2Fwarehouse-worker%3Futm_source%3Dgoogle%26utm_medium%3Dsem%26utm_campaign%3D1144404679%26utm_term%3D%26network%3Dg%26device%3Dc%26adposition%3D%26adgroupid%3D53298122072%26placement%3D%26gclid%3DCj0KCQiA9YugBhCZARIsAACXxeKZkO4UScmPw5RDJsGm08w3fnLxpydAPZ5P-Vx3Wa96dnsMeZ6czO0aAq-SEALw_wcB&amp;tiba=MyPerfectCV&amp;auid=1702947657.1677934751&amp;fledge=1&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B110.0.5481.178%7CNot%2520A(Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B110.0.5481.178&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"></script>
+	<script src="https://bat.bing.com/p/action/4023854.js" type="text/javascript" async="" data-ueto="ueto_6e3d36e750"></script>
+	<style type="text/css" data-react-beautiful-dnd-always="0">
+		[data-react-beautiful-dnd-drag-handle="0"] {
+			-webkit-touch-callout: none;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			touch-action: manipulation;
+		}
+
+		[data-react-beautiful-dnd-droppable="0"] {
+			overflow-anchor: none;
+		}
+	</style>
+	<style type="text/css" data-react-beautiful-dnd-dynamic="0">
+		[data-react-beautiful-dnd-drag-handle="0"] {
+			cursor: -webkit-grab;
+			cursor: grab;
+		}
+	</style>
+</head>
+<body>
+	<style type="text/css" id="static">
+
+		@import url('https://fonts.googleapis.com/css?family=Blinker:400,700');
+
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			vertical-align: baseline;
+			background: transparent
+		}
+
+		body {
+			line-height: 1;
+			text-align: left;
+			font-feature-settings: "liga" 0;
+			-moz-font-feature-settings: "liga" off
+		}
+
+		.skn-mli1 table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			font-size: inherit;
+			color: inherit;
+			width: 100%
+		}
+
+		/*START content disc style for LI*/
+		.skn-mli1 ul, .skn-mli1 li {
+			list-style: none;
+			margin: 0 0 0 8px;
+			padding: 0
+		}
+
+			.skn-mli1 ul li {
+				position: relative;
+				margin: 0
+			}
+
+				.skn-mli1 ul li:before {
+					content: '\2022';
+					position: absolute;
+					left: -8px;
+					top: 2px;
+					font-family: auto
+				}
+
+		.skn-mli1 .jobline ul, .skn-mli1 .education .field ul {
+			margin-top: 5px
+		}
+
+		.skn-mli1 .adnlLnks ul {
+			margin-left: 0
+		}
+
+			.skn-mli1 .adnlLnks ul li:before {
+				content: ''
+			}
+		/*END content disc style for LI*/
+
+		.skn-mli1 .clear {
+			clear: both;
+			height: 0
+		}
+
+		.skn-mli1 .txt-bold {
+			font-weight: bold
+		}
+
+		.skn-mli1 .break-all {
+			word-break: break-all
+		}
+
+		.skn-mli1 .paddedline {
+			display: block
+		}
+
+		.skn-mli1 .flt-right {
+			float: right
+		}
+
+		.skn-mli1 .pb5 {
+			padding-bottom: 5px
+		}
+
+		/*Document*/
+		.skn-mli1 {
+			color: #46464e;
+			line-height: 16px;
+			font-variant-ligatures: none;
+			min-height: 792px;
+			word-wrap: break-word
+		}
+
+			.skn-mli1 .name {
+				color: #496267;
+				font-weight: bold;
+				padding: 0 0 10px 0;
+				text-align: left;
+				position: relative;
+				letter-spacing: .5px
+			}
+
+			.skn-mli1 .resumeTitle {
+				color: #4a4a4a;
+				font-weight: bold
+			}
+
+			.skn-mli1 .parentContainer {
+				display: table;
+				table-layout: fixed;
+				width: 100%;
+				min-height: inherit
+			}
+
+				.skn-mli1 .parentContainer .right-box > .section:first-child + .section {
+					border-top: none
+				}
+
+				.skn-mli1 .parentContainer .right-box > .sortable-item:first-child + .sortable-item .section {
+					border: none
+				}
+
+			.skn-mli1 .paragraph.firstparagraph {
+				margin-top: 0
+			}
+
+			.skn-mli1 .social-link .field a {
+				color: #fff
+			}
+
+			/* Common style for left and right box */
+			.skn-mli1 .right-box {
+				padding: 25px 35px 25px 20px;
+				display: table-cell;
+				vertical-align: top;
+				letter-spacing: 0.2px
+			}
+
+			.skn-mli1 .left-box {
+				background-color: #496267;
+				box-sizing: content-box;
+				display: table-cell;
+				background-size: 100%;
+				color: #fff;
+				padding: 25px 20px 25px 35px
+			}
+
+				.skn-mli1 .left-box .section {
+					border-top: 1px solid #fff
+				}
+
+			.skn-mli1 .right-box .section {
+				border-top: 1px solid #000
+			}
+
+				.skn-mli1 .left-box .section:first-child, .skn-mli1 .right-box .section:first-child {
+					padding-top: 0px
+				}
+
+				.skn-mli1 .right-box .section:first-child {
+					border-top: none;
+					border-bottom: 5px solid #000;
+					padding-bottom: 0;
+					margin-bottom: 30px
+				}
+
+			.skn-mli1 .left-box .section[id^="SECTION_PICT"] {
+				padding-top: 0;
+				margin-bottom: 25px;
+				border: none;
+				text-align: center;
+				position: relative
+			}
+
+			.skn-mli1 .left-box .section:first-child .paragraph {
+				padding: 0;
+				display: block
+			}
+
+			.skn-mli1 .left-box .heading, .skn-mli1 .right-box .paragraph, .skn-mli1 .adnlLnks ul li {
+				padding: 0
+			}
+
+			.skn-mli1 .resumeTitle, .skn-mli1 .right-box .sectiontitle {
+				color: #000
+			}
+
+			.skn-mli1 .right-box .skill {
+				display: table;
+				width: 100%;
+				table-layout: fixed
+			}
+
+				.skn-mli1 .right-box .skill .paddedline {
+					display: table-cell;
+					width: 50%
+				}
+
+					.skn-mli1 .right-box .skill .paddedline:last-child {
+						padding-left: 10px
+					}
+
+			/* PRFL */
+			.skn-mli1 .prflPic, .skn-mli1 .prflPic .field {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center
+			}
+
+				.skn-mli1 .prflPic img {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto
+				}
+
+			/* Heading */
+			.skn-mli1 .heading {
+				line-height: 15px;
+				margin-bottom: 5px
+			}
+
+			.skn-mli1 .sectiontitle {
+				font-weight: bold;
+				;
+				text-transform: uppercase;
+				letter-spacing: .5px
+			}
+
+			.skn-mli1 .sectiontitle, .skn-mli1 .parentContainer .left-box .singlecolumn {
+				word-wrap: break-word
+			}
+
+			/* section */
+			.skn-mli1 .section:empty, .skn-mli1 .fielditem:empty {
+				display: none
+			}
+
+			.skn-mli1 .septr:before {
+				content: "|";
+				font-size: 9px;
+				vertical-align: top;
+				padding-left: 2px;
+				padding-right: 2px
+			}
+
+			.skn-mli1 .left-box .section[id^="SECTION_PICT"]:after {
+				display: none
+			}
+
+			.skn-mli1 .left-box .section:after {
+				content: '';
+				display: block
+			}
+
+			.skn-mli1 .left-box .sec-cntc {
+				margin-bottom: 0
+			}
+
+			.skn-mli1 .left-box .sec-alnk {
+				border-top: none;
+				margin-top: 5px
+			}
+
+			.skn-mli1 .sec-cntc + .section:not(.sec-alnk) {
+				margin-top: 25px
+			}
+
+			/*Signature*/
+			.skn-mli1 .disclaim .field.singlecolumn, .skn-mli1 .paragraph .signPic > .field_sign {
+				margin-left: 0
+			}
+
+				.skn-mli1 .disclaim .field.singlecolumn, .skn-mli1 .disclaim .field.singlecolumn li, .skn-mli1 .disclaim .field.singlecolumn p, .skn-mli1 .disclaim .field.singlecolumn span {
+					font-size: 9px;
+					color: #8a8a8a
+				}
+
+			.skn-mli1 .sign .field_sign {
+				font-size: 7px;
+				color: #8a8a8a;
+				letter-spacing: 0
+			}
+
+			.skn-mli1 .txtleft + .field_sign {
+				text-align: left
+			}
+
+			.skn-mli1 .txtcenter + .field_sign {
+				text-align: center
+			}
+
+			.skn-mli1 .txtright + .field_sign {
+				text-align: right
+			}
+
+			.skn-mli1 .signPic span:first-child {
+				padding-right: 6px
+			}
+
+			.skn-mli1 .signPic img {
+				max-width: 100%
+			}
+
+			.skn-mli1 .right-box .sign.section {
+				border: none;
+				margin-bottom: 0
+			}
+
+			.skn-mli1 .disclaim.section {
+				border: none;
+				margin-bottom: 0
+			}
+
+
+			/* SVG Icon Style */
+			.skn-mli1 .iconRow {
+				display: table;
+				table-layout: fixed;
+				width: 100%;
+				margin-bottom: 5px;
+				word-wrap: break-word
+			}
+
+				.skn-mli1 .iconRow:last-child {
+					margin-bottom: 0
+				}
+
+			.skn-mli1 .social-link .iconRow:last-child {
+				margin-bottom: 5px
+			}
+
+			.skn-mli1 .iconSvg {
+				width: 12px;
+				height: 12px;
+				display: table-cell;
+				vertical-align: middle
+			}
+
+				.skn-mli1 .iconSvg svg {
+					vertical-align: middle;
+					fill: #fff
+				}
+
+			.skn-mli1 .icoTxt {
+				display: table-cell;
+				padding-left: 10px
+			}
+
+			.skn-mli1 .social svg {
+				transform: scale(1.5)
+			}
+
+			.skn-mli1 .st0 {
+				filter: url(#Adobe_OpacityMaskFilter);
+			}
+
+			.skn-mli1 .st1 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #FFFFFF
+			}
+
+			.skn-mli1 .st2 {
+				mask: url(#mask-2_1_);
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #FFFFFF
+			}
+
+			/*New logic for infographic*/
+			.skn-mli1 .lang-sec .singlecolumn, .skn-mli1 .skli-sec .singlecolumn {
+				display: none
+			}
+
+			.skn-mli1 .lang-sec.infobarsec .infobarpara, .skn-mli1 .lang-sec.infotilesec .infotilepara,
+			.skn-mli1 .skli-sec.infobarsec .infobarpara, .skn-mli1 .skli-sec.infotilesec .infotilepara {
+				display: block
+			}
+
+			/*Infographic*/
+			.skn-mli1 .lang-sec.infobarsec, .skn-mli1 .skli-sec.infobarsec {
+				font-size: 0
+			}
+
+				.skn-mli1 .lang-sec.infobarsec .field *, .skn-mli1 .lang-sec.infobarsec .nativeLangPara .field, .skn-mli1 .skli-sec.infobarsec .field * {
+					display: inline
+				}
+
+				.skn-mli1 .lang-sec.infobarsec .paragraph, .skn-mli1 .skli-sec.infobarsec .paragraph {
+					display: inline-block;
+					vertical-align: top;
+					padding-bottom: 5px;
+					margin-top: 0
+				}
+
+					.skn-mli1 .lang-sec.infobarsec .paragraph .singlecolumn, .skn-mli1 .skli-sec.infobarsec .singlecolumn {
+						margin-left: 0;
+						padding-left: 0;
+						position: relative
+					}
+
+			.skn-mli1 .right-box .lang-sec.infobarsec .para_odd, .skn-mli1 .right-box .skli-sec.infobarsec .para_odd {
+				margin-right: 15px
+			}
+
+			.skn-mli1 .lang-sec.infobarsec > .paragraph:nth-last-child(1), .skn-mli1 .right-box .lang-sec.infobarsec > .paragraph:nth-last-child(2), .skn-mli1 .skli-sec.infobarsec > .paragraph:nth-last-child(1), .skn-mli1 .right-box .skli-sec.infobarsec > .paragraph:nth-last-child(2) {
+				padding-bottom: 0 !important
+			}
+
+			.skn-mli1 .lang-sec.infobarsec .paragraph.nativeLangPara {
+				width: 100%
+			}
+
+			.skn-mli1 .right-box .lang-sec.infobarsec .inner-rating, .skn-mli1 .right-box .skli-sec.infobarsec .inner-rating {
+				position: relative
+			}
+
+			.skn-mli1 .right-box .lang-sec.infobarsec .rating-bar, .skn-mli1 .right-box .skli-sec.infobarsec .rating-bar {
+				background: #d5d6d6;
+				width: 100%;
+				clear: both;
+				margin-top: 3px;
+				position: relative;
+				page-break-inside: avoid
+			}
+
+			.skn-mli1 .left-box .lang-sec.infobarsec .rating-bar, .skn-mli1 .left-box .skli-sec.infobarsec .rating-bar {
+				background: rgba(255,255,255,.25);
+				width: 100%;
+				clear: both;
+				margin-top: 3px;
+				position: relative;
+				page-break-inside: avoid
+			}
+
+			.skn-mli1 .right-box .lang-sec.infobarsec .inner-rating, .skn-mli1 .right-box .skli-sec.infobarsec .inner-rating {
+				background-color: #496267;
+				height: 4px;
+				position: relative;
+				width: 60%
+			}
+
+			.skn-mli1 .left-box .lang-sec.infobarsec .inner-rating, .skn-mli1 .left-box .skli-sec.infobarsec .inner-rating {
+				background-color: #fff;
+				height: 4px;
+				position: relative;
+				width: 60%
+			}
+
+			.skn-mli1 .left-box .lang-sec.infobarsec .paragraph, .skn-mli1 .left-box .skli-sec.infobarsec .paragraph {
+				display: block;
+				margin-right: 0;
+				width: 100%;
+				max-width: 100%
+			}
+
+			.skn-mli1 .lang-sec .paragraph, .skn-mli1 .skli-sec .paragraph {
+				padding-top: 0
+			}
+
+			.skn-mli1 .left-box .rating-bar {
+				background: transparent;
+				position: relative;
+				width: 100%;
+				clear: both;
+			}
+
+			.skn-mli1 .left-box .inner-rating {
+				background-color: #fff;
+				position: relative
+			}
+
+			.skn-mli1 .left-box .rating-bar:before {
+				content: '';
+				position: absolute;
+				height: 4px;
+				width: 100%;
+				left: 0;
+				top: 0;
+				opacity: .35;
+				height: 100%
+			}
+
+			.skn-mli1 .left-box .lang-sec .sliced-rect .sliced-rect-tile.ratvfill, .skn-mli1 .left-box .sliced-rect .sliced-rect-tile.ratvfill {
+				background: #fff
+			}
+
+			.skn-mli1 .left-box .lang-sec .sliced-rect .sliced-rect-tile, .skn-mli1 .left-box .skli-sec .sliced-rect .sliced-rect-tile {
+				background: rgba(255,255,255,.25);
+			}
+
+			.skn-mli1 .left-box .skli-sec .paragraph:last-child .singlecolumn .field:last-child {
+				min-height: 0
+			}
+
+			.skn-mli1 .right-box .skli-sec .paragraph:nth-last-child(1) .singlecolumn .field:last-child, .skn-mli1 .right-box .skli-sec .paragraph:nth-last-child(2) .singlecolumn .field:last-child {
+				min-height: 0
+			}
+
+
+
+			/*Infographic Tiles*/
+			.skn-mli1 .lang-sec, .skn-mli1 .skli-sec {
+				font-size: 0
+			}
+
+				.skn-mli1 .lang-sec.infotilesec .paragraph, .skn-mli1 .skli-sec .paragraph {
+					font-size: 0;
+					display: inline-block;
+					vertical-align: top;
+					padding-bottom: 5px;
+					margin-top: 0
+				}
+
+				.skn-mli1 .lang-sec.infotilesec > .paragraph:nth-last-child(1), .skn-mli1 .right-box .lang-sec.infotilesec > .paragraph:nth-last-child(2), .skn-mli1 .skli-sec > .paragraph:nth-last-child(1), .skn-mli1 .right-box .skli-sec > .paragraph:nth-last-child(2) {
+					padding-bottom: 0 !important
+				}
+
+				.skn-mli1 .lang-sec.infotilesec .field *, .skn-mli1 .skli-sec .field *, .skn-mli1 .lang-sec.infotilesec .nativeLangPara .field {
+					display: inline
+				}
+
+				.skn-mli1 .lang-sec.infotilesec .paragraph .singlecolumn, .skn-mli1 .skli-sec .paragraph .singlecolumn {
+					margin-left: 0;
+					padding-left: 0
+				}
+
+				.skn-mli1 .lang-sec.infotilesec .sliced-rect, .skn-mli1 .skli-sec .sliced-rect {
+					height: 6px;
+					width: 100%;
+					line-height: 0px;
+					margin-top: 3px;
+					clear: both
+				}
+
+			.skn-mli1 .right-box .lang-sec.infotilesec .paragraph.para_odd, .skn-mli1 .right-box .skli-sec .paragraph.para_odd {
+				margin-right: 15px
+			}
+
+			.skn-mli1 .left-box .lang-sec.infotilesec .paragraph, .skn-mli1 .left-box .skli-sec .paragraph {
+				width: 97%;
+				max-width: 97%;
+				margin-top: 0
+			}
+
+			.skn-mli1 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile, .skn-mli1 .skli-sec .sliced-rect .sliced-rect-tile {
+				height: 100%;
+				background-color: #d5d6d6;
+				float: left;
+				margin-right: 3px
+			}
+
+			.skn-mli1 .left-box .lang-sec.infotilesec .sliced-rect .sliced-rect-tile, .skn-mli1 .left-box .skli-sec .sliced-rect .sliced-rect-tile {
+				background-color: rgba(255,255,255,.25)
+			}
+
+			.skn-mli1 .lang-sec.infotilesec .sliced-rect .sliced-rect-tile:last-child, .skn-mli1 .skli-sec .sliced-rect .sliced-rect-tile:last-child {
+				margin-right: 0
+			}
+
+			/*Rectangular Rating Blocks*/
+			.skn-mli1 .sliced-rect .sliced-rect-tile.ratvfill {
+				background-color: #496267
+			}
+
+			.skn-mli1 .hide-bar .paragraph .rating-bar, .skn-mli1 .hide-only-bar .rating-bar, .skn-mli1 .hide-bar .paragraph .sliced-rect, .skn-mli1 .hide-colon .paragraph .colon {
+				display: none
+			}
+
+			/*MFR address*/
+			.skn-mli1 .zipsuffix, .skn-mli1.LFR .zipprefix, .skn-mli1.MFR .zipprefix, .skn-mli1.MES .zipprefix {
+				display: block
+			}
+
+			.skn-mli1 .zipprefix, .skn-mli1.MFR .zipsuffix, .skn-mli1.MES .zipsuffix {
+				display: none
+			}
+
+			/* For Space before colon*/
+			.skn-mli1 .beforecolonspace {
+				display: none !important
+			}
+
+			.skn-mli1.MFR .beforecolonspace {
+				display: inline !important
+			}
+
+			/* GRYR */
+			.skn-mli1 .displayNoneThisField {
+				display: none
+			}
+			/* Keep this class always at bottom */
+
+			/*HILT multi para/section*/
+			.skn-mli1 .multi-section-hilt .multi-para-opt, .skn-mli1 .section:not(.multi-para-hilt):not(.multi-section-hilt) .multi-para-opt, .skn-mli1 .multi-para-hilt .dflt-view {
+				display: none
+			}
+
+			.skn-mli1 .multi-para-hilt:after {
+				content: "";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0
+			}
+			/*Clearfix*/
+			.skn-mli1 .right-box .multi-para-hilt .paragraph {
+				display: block;
+				float: left;
+				clear: none;
+				margin-top: 0px;
+				margin-right: 2%
+			}
+
+				.skn-mli1 .right-box .multi-para-hilt .paragraph:nth-child(2n+1) {
+					margin-right: 0
+				}
+
+				.skn-mli1 .right-box .multi-para-hilt .paragraph:nth-last-child(1), .skn-mli1 .right-box .multi-para-hilt .paragraph:nth-last-child(2) {
+					margin-bottom: 0
+				}
+
+			.skn-mli1 .right-box .multi-para-hilt .singlecolumn {
+				margin-left: 0 !important;
+				padding-left: 0
+			}
+
+			.skn-mli1 .right-box .multi-para-hilt .paragraph {
+				margin-bottom: 15px
+			}
+
+			.skn-mli1 .left-box .multi-para-hilt .paragraph:last-child {
+				margin-bottom: 0
+			}
+
+			.skn-mli1 .right-box .multi-para-hilt .paragraph:nth-child(2n) {
+				clear: right
+			}
+
+			.skn-mli1 .paragraph-fieldgroup .social svg, .skn-mli1 .paragraph-fieldgroup .social-link svg .svg-inricon {
+				transform: scale(1.45);
+				transform-origin: center;
+			}
+
+			.skn-mli1 .paragraph-fieldgroup .sml-face {
+				opacity: .3
+			}
+
+			.skn-mli1 .paragraph-fieldgroup .big-face {
+				fill: #fff
+			}
+
+				.skn-mli1 .paragraph-fieldgroup .big-face + g {
+					fill: #496267
+				}
+
+			.skn-mli1 .paragraph-fieldgroup .text {
+				fill: #000;
+				transform: scale(1.2);
+				transform-origin: 45px 30px
+			}
+
+	</style>
+	<style type="text/css" id="dynamic" data-time="Sat Mar 04 2023 14:18:01 GMT+0000 (Greenwich Mean Time)">
+		.skn-mli1, .skn-mli1 table {
+			line-height: 18px
+		}
+
+			.skn-mli1.pagesize {
+                width: 21cm;
+                height: 29.7cm; 
+			}
+
+			.skn-mli1.fontsize, .skn-mli1 .lang-sec .paragraph *, .skn-mli1 .skli-sec .paragraph * {
+				font-size: 12px
+			}
+
+			.skn-mli1.fontface {
+				font-family: Blinker
+			}
+
+			.skn-mli1 .section {
+				margin-bottom: 25px
+			}
+
+			.skn-mli1 .paragraph {
+				margin-top: 15px
+			}
+
+			.skn-mli1 .right-box .singlecolumn, .skn-mli1 .right-box .maincolumn {
+				margin-left: 0px
+			}
+
+			.skn-mli1 table.skills td {
+				padding-top: 5px
+			}
+
+			.skn-mli1 .name {
+				color: #496267;
+				font-size: 36px;
+				line-height: 35px
+			}
+
+			.skn-mli1 .resumeTitle {
+				font-size: 17px;
+				line-height: 17px;
+				margin: 0 0 10px 0
+			}
+			/* .skn-mli1 .address2{font-size:10px;line-height:{$CILH}px} */
+			.skn-mli1 .heading {
+				font-size: 14px;
+				line-height: 17px
+			}
+
+			.skn-mli1 .left-box {
+				background-color: #496267;
+				width: 179px
+			}
+
+				.skn-mli1 .left-box .multi-para-hilt .paragraph {
+					margin-bottom: 10px
+				}
+
+			.skn-mli1 ul li {
+				padding-left: 0px
+			}
+
+			.skn-mli1 .left-box, .skn-mli1 .right-box .inner-rating {
+				background-color: #496267
+			}
+
+			.skn-mli1 .sectiontitle {
+				font-size: 16px;
+				line-height: 17px
+			}
+
+			.skn-mli1 .right-box .singlecolumn, .skn-mli1 .right-box .maincolumn {
+				margin-left: 0px
+			}
+
+			.skn-mli1 .skli-sec .singlecolumn .field:last-child {
+				min-height: 15px
+			}
+
+			.skn-mli1 .disclaim, .skn-mli1 .sign {
+				margin-top: 50px
+			}
+
+				.skn-mli1 .sign + .disclaim, .skn-mli1 .disclaim + .sign {
+					margin-top: 25px
+				}
+
+			/* icons */
+			.skn-mli1 .iconSvg {
+				line-height: 12px
+			}
+
+				.skn-mli1 .iconSvg svg, .skn-mli1 .iconSvg {
+					width: 12px;
+					height: 12px
+				}
+
+			.skn-mli1 .paragraph-fieldgroup .big-face + g, .skn-mli1 .paragraph-fieldgroup .text {
+				fill: #496267
+			}
+
+			/*Infographic*/
+			.skn-mli1 .right-box .lang-sec.infobarsec .paragraph, .skn-mli1 .right-box .skli-sec.infobarsec .paragraph {
+				width: 148px
+			}
+
+			.skn-mli1 .right-box .lang-sec.infobarsec, .skn-mli1 .right-box .skli-sec.infobarsec {
+				padding-left: 0px
+			}
+
+				.skn-mli1 .right-box .lang-sec.infobarsec .heading, .skn-mli1 .right-box .skli-sec.infobarsec .heading, .skn-mli1 .right-box .multi-para-hilt .heading {
+					margin-left: -0px
+				}
+
+				.skn-mli1 .right-box .lang-sec.infobarsec .inner-rating, .skn-mli1 .right-box .skli-sec.infobarsec .inner-rating {
+					background-color: #496267
+				}
+
+			.skn-mli1 .left-box .lang-sec.infobarsec .paragraph, .skn-mli1 .left-box .skli-sec.infobarsec .paragraph {
+				padding-bottom: 5px
+			}
+
+			.skn-mli1 .lang-sec.infobarsec .nativeLangPara {
+				width: 330px !important;
+				max-width: 330px
+			}
+			/*Important needed for MPIT builder*/
+
+			/*Infographic Skills*/
+			.skn-mli1 .right-box .lang-sec.infotilesec, .skn-mli1 .right-box .skli-sec, .skn-mli1 .right-box .multi-para-hilt {
+				padding-left: 0px
+			}
+
+				.skn-mli1 .right-box .lang-sec.infotilesec .heading, .skn-mli1 .right-box .skli-sec .heading {
+					margin-left: -0px
+				}
+
+				.skn-mli1 .right-box .lang-sec.infotilesec .paragraph, .skn-mli1 .right-box .skli-sec .paragraph {
+					width: 148px
+				}
+
+			.skn-mli1 .left-box .lang-sec.infotilesec .paragraph, .skn-mli1 .left-box .skli-sec .paragraph {
+				padding-bottom: 5px
+			}
+
+			.skn-mli1 .right-box .lang-sec.infotilesec .nativeLangPara {
+				width: 330px !important;
+				max-width: 330px !important
+			}
+
+			/*Rectangular Rating Blocks*/
+			.skn-mli1 .paragraph .sliced-rect .sliced-rect-tile.ratvfill {
+				background-color: #496267
+			}
+
+			.skn-mli1 .left-box .paragraph .sliced-rect .sliced-rect-tile.ratvfill {
+				background-color: #fff
+			}
+
+			/*Multi-para HILT*/
+			.skn-mli1 .right-box .multi-para-hilt .paragraph {
+				width: 49%;
+				max-width: 49%
+			}
+
+			/*fixes for builder*/
+			.skn-mli1 .right-box .lang-sec .sortable-item, .skn-mli1 .right-box .skli-sec .sortable-item {
+				display: inline-block
+			}
+
+		.resume-preview .skn-mli1 .right-box .lang-sec .paragraph, .resume-preview .skn-mli1 .right-box .skli-sec .paragraph {
+			width: 126px;
+			max-width: 126px
+		}
+
+			.resume-preview .skn-mli1 .right-box .lang-sec .paragraph.nativeLangPara, .resume-preview .skn-mli1 .right-box .skli-sec .paragraph.nativeLangPara {
+				max-width: 100% !important;
+				width: 100% !important
+			}
+
+		.skn-mli1 .data-CNTC + .section:not(.data-ALNK) .section {
+			margin-top: 25px
+		}
+
+		.skn-mli1 .right-box .sortable-item:first-child .section {
+			border-top: none;
+			border-bottom: 5px solid #000;
+			padding-bottom: 0;
+			margin-bottom: 30px
+		}
+
+		.skn-mli1 .sortable-item.active .sectiontitle {
+			color: #000
+		}
+
+		.skn-mli1 .sortable-item.active .singlecolumn {
+			color: #46464e
+		}
+
+		.skn-mli1 .sortable-item.active .address .iconSvg path {
+			fill: #46464e
+		}
+
+		.skn-mli1 .left-box .data-CNTC + .sortable-item:not(.data-ALNK) .section {
+			margin-top: 25px
+		}
+
+		.skn-mli1 .left-box .active .inner-rating, .skn-mli1 .left-box .active-drag .inner-rating {
+			background-color: #496267 !important
+		}
+
+		.skn-mli1 .left-box .active .rating-bar, .skn-mli1 .left-box .active-drag .rating-bar {
+			background: #d5d6d6 !important
+		}
+
+		.skn-mli1.LES .right-box .sortable-item .lang-sec.infotilesec .paragraph, .skn-mli1.LES .right-box .sortable-item .skli-sec .paragraph {
+			width: 162px
+		}
+		/* MPUK */
+		.resume-preview .skn-mli1.MUK .right-box .lang-sec .paragraph, .resume-preview .skn-mli1.MUK .right-box .skli-sec .paragraph {
+			width: 149px;
+			max-width: 149px
+		}
+		/* LES */
+		.resume-preview .skn-mli1.LES .right-box .lang-sec .paragraph.nativeLangPara, .resume-preview .skn-mli1.LES .right-box .skli-sec .paragraph.nativeLangPara {
+			width: 330px !important
+		}
+
+		.resume-preview .skn-mli1.LES .right-box .lang-sec.infotilesec .paragraph, .resume-preview .skn-mli1.LES .right-box .skli-sec.infotilesec .paragraph {
+			width: 149px;
+			max-width: 149px
+		}
+
+		/* PRFL */
+		.skn-mli1 .prflPic, .skn-mli1 .prflPic .field {
+			height: 169px;
+			width: 169px
+		}
+
+			.skn-mli1 .prflPic img {
+				max-height: 169px;
+				max-width: 169px;
+				min-height: 169px;
+				min-width: 169px
+			}
+
+		@-moz-document url-prefix() {
+			.skn-mli1 .parentContainer {
+				height: 600px
+			}
+		}
+
+		@media all and (-ms-high-contrast:none) {
+			.skn-mli1 .prflPic img {
+				position: static
+			}
+			/* IE11 */
+		}
+
+		/*Fixes for builder for skill*/
+		.skn-mli1 .skli-sec .sortable-item .paragraph:last-child .singlecolumn .field:last-child {
+			min-height: 15px
+		}
+
+		.skn-mli1 .left-box .skli-sec .sortable-item:last-child .paragraph .singlecolumn .field:last-child, .skn-mli1 .right-box .skli-sec .sortable-item:nth-last-child(1) .paragraph .singlecolumn .field:last-child, .skn-mli1 .right-box .skli-sec .sortable-item:nth-last-child(2) .paragraph .singlecolumn .field:last-child {
+			min-height: 0
+		}
+
+		.skn-mli1 .right-box .lang-sec .sortableInner > .sortable-item:nth-last-child(1) .paragraph, .skn-mli1 .right-box .lang-sec .sortableInner > .sortable-item:nth-last-child(2) .paragraph, .skn-mli1 .right-box .skli-sec .sortableInner > .sortable-item:nth-last-child(1) .paragraph, .skn-mli1 .right-box .skli-sec .sortableInner > .sortable-item:nth-last-child(2) .paragraph {
+			padding-bottom: 0 !important
+		}
+
+		.skn-mli1 .left-box .lang-sec .sortableInner > .sortable-item:nth-last-child(1) .paragraph, .skn-mli1 .left-box .skli-sec .sortableInner > .sortable-item:nth-last-child(1) .paragraph {
+			padding-bottom: 0 !important
+		}
+	</style>
+	<div class="document doc-root fontsize fontface vmargins hmargins   pagesize skn-mli1 MLI1  MUK " docskinwidth="598" data-color="#496267">
+		<div id="CONTAINER_PARENT_0" class="parentContainer" style="height: 100%;">
+			<div id="CONTAINER_0" class="left-box">
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-PICT">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;"></div>
+					<div id="SECTION_PICTa3298b9e-82d6-43bc-8877-57771f42a85b" class="section notdraggable SECTION_PICT firstsection   " data-section-cd="PICT">
+						<div class=" doc-item">
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_PICT_b6460284-a03e-fc16-9687-1e1dadc311c7" class="paragraph PARAGRAPH_PICT firstparagraph  ">
+										<div class="clearfix doc-item">
+											<div class="prflPic">
+												<div class="field" id="FIELD_PURL">
+													<img class="chk" src="https://intlphotos.blob.core.windows.net/photos/gb/a11b3827-1e99-4cfe-8147-7eb43a3f6b48.jpeg?0.530962521864198" alt="Smiley face">
+													<a href="javascript:;" class="btn btn-primary btn-prfl-edit photo-added" title="Edit Photo">Edit Photo</a>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-CNTC">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+					</div>
+					<div id="SECTION_CNTC6d597624-c82f-4adb-bcfe-172f22853fd7" class="section sec-cntc notdraggable SECTION_CNTC    has-title " data-section-cd="CNTC">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_CNTC">
+									Contact
+									<span title="Rename Contact " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_CNTC_4aa8d9cb-f4ad-41fa-9375-b946177e5a51" class="paragraph PARAGRAPH_CNTC firstparagraph  ">
+										<div class="clearfix doc-item">
+											<div class="address">
+												<div class="singlecolumn">
+													<div class="iconRow" dependency="ADDR|STRT|CITY|STAT|ZIPC">
+														<div class="iconSvg">
+															<svg width="11px" height="15px" viewBox="0 0 11 15">
+																<path d="M5.390712,9.10533109 C3.337092,9.110718 1.661472,7.444818 1.65551617,5.390658 C1.649592,3.337038 3.316032,1.660878 5.370192,1.65546217 C7.423812,1.649538 9.099432,3.315978 9.10538783,5.370138 C9.111312,7.423758 7.444872,9.099378 5.390712,9.10533109 L5.390712,9.10533109 Z M5.365332,-0.000182380992 C2.398572,0.007938 -0.008208,2.428758 -0.000128385548,5.394978 C0.003132,6.606198 0.399492,7.748838 1.145772,8.699238 L5.404752,14.126778 L9.633492,8.675478 C10.374372,7.721298 10.764252,6.576498 10.761032,5.365278 C10.752912,2.399058 8.332092,-0.008262 5.365332,-0.000182380992 L5.365332,-0.000182380992 Z M5.798952,7.034958 L4.971132,7.037118 L4.967892,5.795658 L3.725892,5.798898 L3.723732,4.971078 L4.965192,4.967838 L4.961952,3.726378 L5.789772,3.723678 L5.793012,4.965138 L7.034472,4.961898 L7.037172,5.789718 L5.795712,5.792958 L5.798952,7.034958 Z M5.372352,2.48328723 C3.775032,2.487618 2.479032,3.791178 2.48334123,5.388498 C2.487672,6.985818 3.791232,8.281818 5.388552,8.27750877 C6.985872,8.273178 8.281872,6.969618 8.27756277,5.372298 C8.273232,3.774978 6.969672,2.478978 5.372352,2.48328723 L5.372352,2.48328723 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+															</svg>
+														</div>
+														<div class="icoTxt zipsuffix">
+															<span id="FIELD_STRT">GCB-54, University of South Wales</span>
+															<span dependency="STRT">
+																<span dependency="NBHD|CITY|STAT">, </span>
+															</span>
+															<span id="FIELD_NBHD"></span>
+															<span id="FIELD_CITY">Pontypridd</span>
+															<span dependency="CITY+STAT">,</span>
+															<span id="FIELD_STAT">Rhondda Cynon Taf</span>
+															<span id="FIELD_ZIPC">CF371DL</span>
+															<span id="FIELD_ADDR"></span>
+														</div>
+													</div>
+													<div class="iconRow" dependency="HPHN|CPHN">
+														<div class="iconSvg">
+															<svg width="12px" height="12px" viewBox="0 0 12 12">
+																<path d="M10.80006,8.7999 C9.63846,8.7999 8.53206,8.5473 7.51206,8.0487 C7.41606,8.0007 7.30566,7.9953 7.20546,8.0301 C7.10466,8.0655 7.02246,8.1393 6.97566,8.2347 L6.34746,9.5361 C4.72026,8.6277 3.37266,7.2819 2.46546,5.6541 L3.76626,5.0241 C3.86226,4.9773 3.93546,4.8951 3.97026,4.7943 C4.00506,4.6941 3.99846,4.5843 3.95106,4.4877 C3.45306,3.4677 3.19986,2.3619 3.19986,1.1997 C3.19986,0.9789 3.02106,0.8001 2.80026,0.8001 L0.40026,0.8001 C0.17886,0.8001 6e-05,0.9789 6e-05,1.1997 C6e-05,7.1553 4.84506,11.9997 10.80006,11.9997 C11.02086,11.9997 11.20026,11.8209 11.20026,11.6001 L11.20026,9.2001 C11.20026,8.9793 11.02086,8.7999 10.80006,8.7999 M6.40026,-0.0003 C6.17886,-0.0003 6.00006,0.1791 6.00006,0.3999 C6.00006,0.6207 6.17886,0.8001 6.40026,0.8001 C9.04746,0.8001 11.20026,2.9529 11.20026,5.6001 C11.20026,5.8209 11.37906,5.9997 11.59986,5.9997 C11.82066,5.9997 12.00006,5.8209 12.00006,5.6001 C12.00006,2.5119 9.48726,-0.0003 6.40026,-0.0003 M6.40026,1.5999 C6.17886,1.5999 6.00006,1.7793 6.00006,2.0001 C6.00006,2.2209 6.17886,2.3997 6.40026,2.3997 C8.16486,2.3997 9.60006,3.8355 9.60006,5.6001 C9.60006,5.8209 9.77886,5.9997 10.00026,5.9997 C10.22106,5.9997 10.39986,5.8209 10.39986,5.6001 C10.39986,3.3945 8.60526,1.5999 6.40026,1.5999 M6.40026,3.2001 C6.17886,3.2001 6.00006,3.3789 6.00006,3.5997 C6.00006,3.8211 6.17886,3.9999 6.40026,3.9999 C7.28226,3.9999 7.99986,4.7175 7.99986,5.6001 C7.99986,5.8209 8.17926,5.9997 8.40006,5.9997 C8.62086,5.9997 8.80026,5.8209 8.80026,5.6001 C8.80026,4.2765 7.72326,3.2001 6.40026,3.2001" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+															</svg>
+														</div>
+														<div class="icoTxt">
+															<span id="FIELD_HPHN">
+																<a href="tel:+447767565059" style="color: #fff;"> +447767565059</a>
+															</span>
+															<span id="FIELD_CPHN"></span>
+														</div>
+													</div>
+													<div class="iconRow" dependency="EMAI">
+														<div class="iconSvg">
+															<svg width="12px" height="12px" viewBox="0 0 12 12">
+																<path d="M11.8425,0.06954 C11.7279,-0.01206 11.5767,-0.02286 11.4519,0.04254 L0.2019,5.91774 C0.0687,5.98674 -0.0099,6.12894 0.0009,6.27834 C0.0123,6.42834 0.1119,6.55674 0.2535,6.60534 L3.3807,7.67394 L10.0419,1.97934 L4.8873,8.18874 L10.1289,9.98034 C10.1679,9.99294 10.2087,10.00014 10.2501,10.00014 C10.3179,10.00014 10.3857,9.98154 10.4451,9.94554 C10.5399,9.88734 10.6047,9.79014 10.6209,9.68034 L11.9961,0.43074 C12.0165,0.29034 11.9577,0.15174 11.8425,0.06954 L11.8425,0.06954 Z M4.3749,8.80614 L6.4083,9.50094 L5.0523,11.34714 C4.9797,11.44494 4.8669,11.50014 4.7499,11.50014 C4.7109,11.50014 4.6713,11.49414 4.6329,11.48154 C4.4793,11.43054 4.3749,11.28714 4.3749,11.12514 L4.3749,8.80614 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+															</svg>
+														</div>
+														<div class="icoTxt">
+															<span id="FIELD_EMAI">
+																<a href="mailto:er.satish674@gmail.com" style="color: #fff;">er.satish674@gmail.com</a>
+															</span>
+														</div>
+													</div>
+													<div class="iconRow" dependency="NTLY">
+														<div class="iconSvg">
+															<svg width="10px" height="13px" viewBox="0 0 10 13">
+																<path d="M9.18516,7.4406 C9.28996,7.5986 9.30036,7.8014 9.21076,7.9694 C9.12116,8.137 8.94676,8.2414 8.75676,8.2414 L1.03036,8.2414 L1.03036,11.847 C1.03036,12.1322 0.79996,12.3622 0.51516,12.3622 C0.23036,12.3622 -4e-05,12.1322 -4e-05,11.847 L-4e-05,0.515 C-4e-05,0.2302 0.23036,-0.0002 0.51516,-0.0002 C0.79996,-0.0002 1.03036,0.2302 1.03036,0.515 L1.03036,1.0302 L8.75676,1.0302 C8.94676,1.0302 9.12116,1.1346 9.21076,1.3022 C9.30036,1.4702 9.28996,1.673 9.18516,1.831 L7.31516,4.6358 L9.18516,7.4406 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+															</svg>
+														</div>
+														<div class="icoTxt">
+															<span id="FIELD_NTLY">Indian</span>
+														</div>
+													</div>
+													<div class="iconRow" dependency="DRIV">
+														<div class="iconSvg">
+															<svg width="14px" height="10px" viewBox="0 0 14 11">
+																<path d="M2.49992235,10 C2.96007657,10 3.33325568,9.62682088 3.33325568,9.16666667 L3.33325568,8.33333333 L9.99992235,8.33333333 L9.99992235,9.16666667 C9.99992235,9.62682088 10.3731015,10 10.8332557,10 L11.666589,10 C12.1267432,10 12.4999224,9.62682088 12.4999224,9.16666667 L12.4999224,7.75858561 C12.7561683,7.46561686 12.916589,7.0867157 12.916589,6.66666667 L12.916589,5.41666667 C12.916589,4.91615295 12.6913184,4.47214762 12.3418413,4.16666667 L12.8645057,4.16666667 C13.0079892,4.16666667 13.1329841,4.06901042 13.1676215,3.92995199 L13.3238715,3.30495199 C13.3731066,3.10780843 13.2238756,2.91666667 13.0205014,2.91666667 L11.4613837,2.91666667 L11.0280596,1.83334351 C10.5827318,0.719528198 9.51998257,9.9475983e-14 8.32023485,9.9475983e-14 L5.01294318,9.9475983e-14 C3.81347521,9.9475983e-14 2.75044624,0.719528198 2.30486416,1.83334351 L1.87153999,2.91666667 L0.312676664,2.91666667 C0.109302437,2.91666667 -0.0399285204,3.10780843 0.00956081879,3.30495199 L0.165810819,3.92995199 C0.20044827,4.06901042 0.325443184,4.16666667 0.468926664,4.16666667 L0.991591052,4.16666667 C0.641859606,4.47214762 0.416589017,4.91615295 0.416589017,5.41666667 L0.416589017,6.66666667 C0.416589017,7.08646139 0.577009753,7.46536255 0.833255684,7.75858561 L0.833255684,9.16666667 C0.833255684,9.62682088 1.2064348,10 1.66658902,10 L2.49992235,10 Z M9.99992235,3.75 L3.33325568,3.75 L3.85225796,2.45234172 C4.04210273,1.97786967 4.50174832,1.66666667 5.01294318,1.66666667 L8.32023485,1.66666667 C8.83142972,1.66666667 9.2910753,1.97786967 9.48092007,2.45234172 L9.99992235,3.75 Z M2.49992235,6.66145325 C1.99991726,6.66145325 1.66658902,6.32916768 1.66658902,5.83073934 C1.66658902,5.33228556 1.99991726,5 2.49992235,5 C2.99992744,5 3.74992235,5.74765523 3.74992235,6.24608358 C3.74992235,6.74453735 2.99992744,6.66145325 2.49992235,6.66145325 Z M9.58325568,6.24608358 C9.58325568,5.74765523 10.3332506,5 10.8332557,5 C11.3332608,5 11.666589,5.33228556 11.666589,5.83073934 C11.666589,6.32916768 11.3332608,6.66145325 10.8332557,6.66145325 C10.3332506,6.66145325 9.58325568,6.74453735 9.58325568,6.24608358 Z" id="vehicle" fill="#FFFFFF" fill-rule="nonzero"></path>
+															</svg>
+														</div>
+														<div class="icoTxt">
+															<span id="FIELD_DRIV">GJ0520100020810 (IND)</span>
+														</div>
+													</div>
+													<div dependency="SOCL" class="social-link">
+														<div id="CATEGORY_SOCIAL_SOCL" class="iconRow">
+															<div class="iconSvg social">
+																<span id="DOCDATAICON_SOCL">
+																	<svg xmlns="http://www.w3.org/2000/svg" class="viewbox_30" viewBox="0 0 30 30">
+																		<!--background-->
+																		<rect x="0.1" y="0.1" class="svg-sqrbg" fill="transparent" stroke="transparent" width="29.8" height="29.8"></rect>
+																		<path class="svg-circlebg" fill="transparent" stroke="transparent" d="M29.9,15L29.9,15c0,8.2-6.7,14.9-14.9,14.9h0C6.8,29.9,0.1,23.2,0.1,15v0C0.1,6.8,6.8,0.1,15,0.1h0  C23.2,0.1,29.9,6.8,29.9,15z"></path>
+																		<!--border-->
+																		<path class="svg-sqrbdr" fill="transparent" stroke="transparent" d="M28.7,1.3v27.4H1.3V1.3H28.7 M29.9,0.1H0.1v29.8h29.8V0.1L29.9,0.1z"></path>
+																		<path class="svg-circlebdr" fill="transparent" stroke="transparent" d="M15,1.3c7.5,0,13.7,6.1,13.7,13.7c0,7.5-6.1,13.7-13.7,13.7C7.5,28.7,1.3,22.5,1.3,15  C1.3,7.5,7.5,1.3,15,1.3 M15,0.1L15,0.1C6.8,0.1,0.1,6.8,0.1,15v0c0,8.2,6.7,14.9,14.9,14.9h0c8.2,0,14.9-6.7,14.9-14.9v0  C29.9,6.8,23.2,0.1,15,0.1L15,0.1z"></path>
+																		<!--icon-->
+																		<path class="svg-inricon" d="M10.9,9c0,1.1-0.9,2-1.9,2C7.9,11,7,10.1,7,9C7,7.9,7.9,7,9,7S10.9,7.9,10.9,9z M10.6,12.3H7.4V23h3.3V12.3  L10.6,12.3z M15.9,12.3h-3.2V23h3.2v-5.6c0-1.5,0.7-2.4,2-2.4c1.2,0,1.8,0.9,1.8,2.4V23H23v-6.7c0-2.8-1.6-4.2-3.9-4.2  s-3.2,1.8-3.2,1.8L15.9,12.3L15.9,12.3z"></path>
+																		<!--inverse icon-->
+																		<path class="svg-fillsqrbg svg-inriconobj fillwht" fill="transparent" stroke="transparent" d="M0,0v30h30V0H0z M10.7,23H7.4V12.3h3.3V23z M9,11c-1.1,0-2-0.9-2-2s0.9-2,2-2s1.9,0.9,1.9,2S10,11,9,11z M23,23h-3.3v-5.6  c0-1.5-0.6-2.4-1.8-2.4c-1.3,0-2,0.9-2,2.4V23h-3.2V12.3h3.2v1.6c0,0,0.9-1.8,3.2-1.8c2.3,0,3.9,1.4,3.9,4.2V23z"></path>
+																		<path class="svg-fillcirclebg" fill="transparent" d="M0,15L0,15c0,8.3,6.7,15,15,15h0c8.3,0,15-6.7,15-15v0c0-8.3-6.7-15-15-15h0C6.7,0,0,6.7,0,15z M10.7,23H7.4V12.3h3.3V23z   M9,11c-1.3,0-2.3-1.3-1.9-2.6C7.3,7.7,7.9,7.1,8.7,7c1.3-0.2,2.2,0.8,2.2,2C10.9,10.1,10,11,9,11z M23,23h-3.3v-5.6  c0-1.5-0.6-2.4-1.8-2.4c-1.3,0-2,0.9-2,2.4V23h-3.2V12.3h3.2v1.6c0,0,0.9-1.8,3.2-1.8c2.3,0,3.9,1.4,3.9,4.2V23z"></path>
+																	</svg>
+																</span>
+															</div>
+															<div class="icoTxt">
+																<span class="field" id="FIELD_SOCL">
+																	<a href="https://www.linkedin.com/in/satishdungarani" target="_blank" style="color: #5090ff;">https://www.linkedin.com/in/satishdungarani</a>
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-HILT">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -114px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_HILT511f98fc-4da7-461e-b42d-cc95fc4123cb" class="section SECTION_HILT    has-title " data-section-cd="HILT">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_HILT">
+									Skills
+									<span title="Rename Skills " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_HILT_aae8ddd3-8114-4b5c-9e35-75f11f09d5c4" class="paragraph PARAGRAPH_HILT firstparagraph  ">
+										<div class="clearfix doc-item">
+											<div class="singlecolumn maincolumn">
+												<div class="skill dflt-view">
+													<span class="paddedline" id="FIELD_SKC1">
+														<ul>
+															<li>Physically fit and able to lift heavy objects</li>
+															<li>Ability to operate warehouse equipment such as pallet jacks and forklifts</li>
+															<li>Attention to detail and accuracy in counting and handling inventory</li>
+															<li>Strong communication skills and ability to work as part of a team</li>
+															<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+															<li>Warehouse Management Systems proficiency</li>
+															<li>Loading and unloading techniques</li>
+															<li>Manual handling</li>
+															<li>Labelling</li>
+															<li>Warehouse operations</li>
+															<li>Fast-paced picking and packing</li>
+															 
+														</ul>
+													</span>
+													<span class="paddedline" id="FIELD_SKC2">
+														<ul>
+															<li>Warehouse picking</li>
+															<li>Product scanning</li>
+															 
+															<li>Machinery operation</li>
+															<li>Logistical planning</li>
+															<li>Box lifting</li>
+															<li>Delivery scheduling</li>
+															<li>Wrapping and boxing</li>
+															 
+															<li>Data entry</li>
+														</ul>
+													</span>
+												</div>
+												<div class="multi-para-opt">
+													<div id="FIELD_PTTL" class="txt-bold"></div>
+													<div class="multi-para-content">
+														<div id="FIELD_SKC1">
+															<ul>
+																<li>Physically fit and able to lift heavy objects</li>
+																<li>Ability to operate warehouse equipment such as pallet jacks and forklifts</li>
+																<li>Attention to detail and accuracy in counting and handling inventory</li>
+																<li>Strong communication skills and ability to work as part of a team</li>
+																<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+																<li>Warehouse Management Systems proficiency</li>
+																<li>Loading and unloading techniques</li>
+																<li>Manual handling</li>
+																<li>Labelling</li>
+																<li>Warehouse operations</li>
+																<li>Fast-paced picking and packing</li>
+																 
+															</ul>
+														</div>
+														<div id="FIELD_SKC2">
+															<ul>
+																<li>Warehouse picking</li>
+																<li>Product scanning</li>
+																 
+																<li>Machinery operation</li>
+																<li>Logistical planning</li>
+																<li>Box lifting</li>
+																<li>Delivery scheduling</li>
+																<li>Wrapping and boxing</li>
+																 
+																<li>Data entry</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-LNGG">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -114px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_LNGG3799dcd0-6dea-87d1-518a-9145a410d54c" class="section lang-sec infobarsec SECTION_LNGG    has-title " data-section-cd="LNGG">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_LNGG">
+									Languages
+									<span title="Rename Languages " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_LNGG_13e3eee2-3758-ce23-b2a4-dc044f4506e9" class="paragraph PARAGRAPH_LNGG firstparagraph  para_odd">
+										<div class="clearfix doc-item">
+											<div class="singlecolumn infobarpara">
+												<div class="field">
+													<span class="txt-bold" id="FIELD_FRFM">English</span>
+													<span class="colon">
+														<span class="beforecolonspace"></span>
+														<span dependency="FRFM">: </span>
+													</span>
+													<span class="flt-right" id="FIELD_RATG"></span>
+												</div>
+												<div class="rating-bar" dependency="RATV">
+													<div class="inner-rating" id="FIELD_RATV" type="width" style="width: 100%;"></div>
+												</div>
+												<div class="field field-ratt">
+													<span id="FIELD_RATT">Fluent</span>
+												</div>
+												<div class="field">
+													<span id="FIELD_ADIF">ESOL B2 LEVEL - High pass</span>
+												</div>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="CONTAINER_1" class="right-box">
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-NAME">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+					</div>
+					<div id="SECTION_NAME201a818b-cce1-4acf-b750-fc17c932ab36" class="section notdraggable SECTION_NAME firstsection   " data-section-cd="NAME">
+						<div class=" doc-item">
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_NAME_047a2054-f554-c809-b7b2-93cf3d1d7cd9" class="paragraph PARAGRAPH_NAME firstparagraph  ">
+										<div>
+											<div class="name">
+												<span id="FIELD_FNAM">Satish</span>
+												<span id="FIELD_LNAM">Dungarani</span>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-SUMM">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -426px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_SUMM6a522611-964e-4b38-85f4-9d2fa85ecde8" class="section SECTION_SUMM    has-title " data-section-cd="SUMM">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_SUMM">
+									Professional summary
+									<span title="Rename Professional summary " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_SUMM_a3c99b9a-9910-debd-816a-43f29678e9a3" class="paragraph PARAGRAPH_SUMM firstparagraph  ">
+										<div class="clearfix doc-item">
+											<div class="singlecolumn" id="FIELD_FRFM">
+												<p> While I may not have direct experience in warehouse operative work, I possess the physical capabilities and attention to detail necessary to excel in this field. My previous work experience has taught me the importance of working efficiently and accurately, and I am confident that I can apply these skills to a warehouse environment. I am a quick learner and take pride in my ability to adapt to new situations, which will allow me to grow and develop as a warehouse operative. Additionally, I have excellent communication skills and thrive in a team-oriented environment. I am excited about the opportunity to learn new skills and contribute to the success of your company. </p>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-CUST">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -114px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_CUSTdca993a9-9619-2f61-6a93-dc00694d1d35" class="section SECTION_CUST    has-title " data-section-cd="CUST">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_CUST">
+									Experience
+									<span title="Rename Experience  " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_CUST_dd079bf9-aeb6-abb2-9da3-eeaf5a05a0ad" class="paragraph PARAGRAPH_CUST firstparagraph  ">
+										<div class="clearfix doc-item">
+											<div class="singlecolumn" id="FIELD_FRFM">
+												<ul>
+													<li>No direct warehouse experience</li>
+												</ul>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-EXPR">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -426px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_EXPR9e439b79-b647-4074-bc00-f8f21e482cdb" class="section SECTION_EXPR   multi-para has-title " data-section-cd="EXPR">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_EXPR">
+									Work history
+									<span title="Rename Work history " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="sortableInner">
+									<div class="sortable-item paragraph-container">
+										<div class="document-tool para-tool" style="right: -32px;">
+											<button class="btn btn-icon-tertiary btn-icon-edit" title="Edit">
+												<i class="icon-edit"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-delete " title="Delete">
+												<i class="icon-delete" title="Delete"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-move " title="Move" style="right: -426px;">
+												<i class="icon-move"></i>
+											</button>
+										</div>
+										<div id="PARAGRAPH_EXPR_b723263f-a302-42ef-8904-ff25a1ebdfcc" class="paragraph PARAGRAPH_EXPR firstparagraph  ">
+											<div class="clearfix doc-item">
+												<div class="singlecolumn">
+													<span class="paddedline" dependency="JTIT|JSTD|EDDT">
+														<span class="jobtitle txt-bold txtCaps" id="FIELD_JTIT">Senior Software Developer</span>
+														<span class="flt-right" dependency="JSTD|EDDT">
+															<span class="jobdates" id="FIELD_JSTD" format="%m/%Y">07/2020</span>
+															<span dependency="JSTD+EDDT"> - </span>
+															<span class="jobdates" id="FIELD_EDDT" format="%m/%Y">11/2021</span>
+														</span>
+													</span>
+													<span class="paddedline locationGap" dependency="COMP|JSTA|JCIT|JCNT|JCTR">
+														<span class="companyname txt-bold" id="FIELD_COMP">Xcellence-IT</span>
+														<span dependency="COMP">
+															<span dependency="JCIT|JSTA|JCNT|JCTR"> -</span>
+														</span>
+														<span class="jobcity" id="FIELD_JCIT">Surat</span>
+														<span dependency="JCIT+JSTA|JCNT">, </span>
+														<span class="jobstate" id="FIELD_JSTA">India</span>
+														<span class="joblocation jobcountry" id="FIELD_JCNT"></span>
+														<span id="FIELD_JCTR"></span>
+													</span>
+													<span class="jobline" id="FIELD_JDES">
+														<ul>
+															<li> It's located in Surat, I joined there as senior .NET developer. Responsibilities are leading team, project requirement gathering and analysis, client communication and support, product maintenance, development, code review, intern's training. </li>
+															<li> Led team of 5 developers to analyze and rebuild software from the ground up through to completion. </li>
+														</ul>
+													</span>
+												</div>
+											</div>
+											<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+												<span class="badge badge-primary badge-edit"></span>
+												<span>&nbsp;</span>
+											</div>
+										</div>
+									</div>
+									<div class="sortable-item paragraph-container">
+										<div class="document-tool para-tool" style="right: -32px;">
+											<button class="btn btn-icon-tertiary btn-icon-edit" title="Edit">
+												<i class="icon-edit"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-delete " title="Delete">
+												<i class="icon-delete" title="Delete"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-move " title="Move" style="right: -426px;">
+												<i class="icon-move"></i>
+											</button>
+										</div>
+										<div id="PARAGRAPH_EXPR_f9f59ae3-f343-45df-a507-37236a0b663d" class="paragraph PARAGRAPH_EXPR  ">
+											<div class="clearfix doc-item">
+												<div class="singlecolumn">
+													<span class="paddedline" dependency="JTIT|JSTD|EDDT">
+														<span class="jobtitle txt-bold txtCaps" id="FIELD_JTIT">Software Developer</span>
+														<span class="flt-right" dependency="JSTD|EDDT">
+															<span class="jobdates" id="FIELD_JSTD" format="%m/%Y">12/2021</span>
+															<span dependency="JSTD+EDDT"> - </span>
+															<span class="jobdates" id="FIELD_EDDT" format="%m/%Y">01/2023</span>
+														</span>
+													</span>
+													<span class="paddedline locationGap" dependency="COMP|JSTA|JCIT|JCNT|JCTR">
+														<span class="companyname txt-bold" id="FIELD_COMP">Amnex Infotechnologies Pvt. Ltd</span>
+														<span dependency="COMP">
+															<span dependency="JCIT|JSTA|JCNT|JCTR"> -</span>
+														</span>
+														<span class="jobcity" id="FIELD_JCIT">Ahmadabad</span>
+														<span dependency="JCIT+JSTA|JCNT">, </span>
+														<span class="jobstate" id="FIELD_JSTA">India</span>
+														<span class="joblocation jobcountry" id="FIELD_JCNT"></span>
+														<span id="FIELD_JCTR"></span>
+													</span>
+													<span class="jobline" id="FIELD_JDES">
+														<ul>
+															<li> It is in Ahmadabad, Gujarat location, I joined as software developer </li>
+															<li> Job responsibilities are requirement analysis and development, with technical mentor. </li>
+														</ul>
+													</span>
+												</div>
+											</div>
+											<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+												<span class="badge badge-primary badge-edit"></span>
+												<span>&nbsp;</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-EDUC">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -114px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_EDUC277bb820-632e-46ef-9a47-b9e655579bfc" class="section education SECTION_EDUC   multi-para has-title " data-section-cd="EDUC">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_EDUC">
+									Education
+									<span title="Rename Education " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="sortableInner">
+									<div class="sortable-item paragraph-container">
+										<div class="document-tool para-tool" style="right: -32px;">
+											<button class="btn btn-icon-tertiary btn-icon-edit" title="Edit">
+												<i class="icon-edit"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-delete " title="Delete">
+												<i class="icon-delete" title="Delete"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-move " title="Move" style="right: -426px;">
+												<i class="icon-move"></i>
+											</button>
+										</div>
+										<div id="PARAGRAPH_EDUC_bd620ccb-68ea-40f9-a14f-acc44638ec21" class="paragraph PARAGRAPH_EDUC firstparagraph  ">
+											<div class="clearfix doc-item">
+												<div class="singlecolumn">
+													<div class="paddedline" dependency="DGRE|STUY|GRYR|GRED|GRST|GRIP">
+														<span class="degree txt-bold" id="FIELD_DGRE">Bachelor of Engineering</span>
+														<span dependency="DGRE+STUY">
+															<span class="beforecolonspace"></span>
+															<span>: </span>
+														</span>
+														<span class="programline" id="FIELD_STUY">Computer Science &amp; Engineering</span>
+														<span dependency="DGRE|STUY">
+															<span dependency="GRYR|GRED|GRST|GRIP">,</span>
+														</span>
+														<span class="jobdates" dependency="GRYR|GRED|GRST|GRIP">
+															<span class="xslt_static_change displayNoneThisField">Expected in </span>
+															<span id="FIELD_GRYR" format="%m/%Y"></span>
+															<span class="jobdates" id="FIELD_GRST" format="%m/%Y">05/2011</span>
+															<span dependency="GRST+GRED"> – </span>
+															<span class="jobdates" id="FIELD_GRED" format="%m/%Y">05/2014</span>
+															<span dependency="GRED|GRST"></span>
+															<span id="FIELD_GRIP"></span>
+														</span>
+													</div>
+													<div class="paddedline" dependency="SCIT|SSTA|SCHO|SCNT|GRHN">
+														<span class="companyname txt-bold" id="FIELD_SCHO">Gujarat Technological University</span>
+														<span dependency="SCHO">
+															<span dependency="SCIT|SSTA|SCNT|GRHN"> –</span>
+														</span>
+														<span class="joblocation jobcity" id="FIELD_SCIT">Ahmedabad</span>
+														<span class="joblocation jobstate" id="FIELD_SSTA"></span>
+														<span class="joblocation jobcountry" id="FIELD_SCNT"></span>
+														<span dependency="SCIT|SSTA|SCNT"></span>
+														<span class="joblocation" id="FIELD_GRHN"></span>
+													</div>
+													<span class="field" id="FIELD_FRFM"></span>
+												</div>
+											</div>
+											<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+												<span class="badge badge-primary badge-edit"></span>
+												<span>&nbsp;</span>
+											</div>
+										</div>
+									</div>
+									<div class="sortable-item paragraph-container">
+										<div class="document-tool para-tool" style="right: -32px;">
+											<button class="btn btn-icon-tertiary btn-icon-edit" title="Edit">
+												<i class="icon-edit"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-delete " title="Delete">
+												<i class="icon-delete" title="Delete"></i>
+											</button>
+											<button type="button" class="btn btn-icon-tertiary btn-icon-move " title="Move" style="right: -426px;">
+												<i class="icon-move"></i>
+											</button>
+										</div>
+										<div id="PARAGRAPH_EDUC_9f45eb2b-857b-863b-b51b-723826344423" class="paragraph PARAGRAPH_EDUC  ">
+											<div class="clearfix doc-item">
+												<div class="singlecolumn">
+													<div class="paddedline" dependency="DGRE|STUY|GRYR|GRED|GRST|GRIP">
+														<span class="degree txt-bold" id="FIELD_DGRE">Master of Science</span>
+														<span dependency="DGRE+STUY">
+															<span class="beforecolonspace"></span>
+															<span>: </span>
+														</span>
+														<span class="programline" id="FIELD_STUY">Computer Science</span>
+														<span dependency="DGRE|STUY">
+															<span dependency="GRYR|GRED|GRST|GRIP">,</span>
+														</span>
+														<span class="jobdates" dependency="GRYR|GRED|GRST|GRIP">
+															<span class="xslt_static_change displayNoneThisField">Expected in </span>
+															<span id="FIELD_GRYR" format="%m/%Y"></span>
+															<span class="jobdates" id="FIELD_GRST" format="%m/%Y">02/2023</span>
+															<span class="jobdates" id="FIELD_GRED" format="%m/%Y"></span>
+															<span dependency="GRED|GRST">
+																<span dependency="GRIP">–</span>
+															</span>
+															<span id="FIELD_GRIP">Current</span>
+														</span>
+													</div>
+													<div class="paddedline" dependency="SCIT|SSTA|SCHO|SCNT|GRHN">
+														<span class="companyname txt-bold" id="FIELD_SCHO">University of South Wales</span>
+														<span dependency="SCHO">
+															<span dependency="SCIT|SSTA|SCNT|GRHN"> –</span>
+														</span>
+														<span class="joblocation jobcity" id="FIELD_SCIT">Pontypridd</span>
+														<span dependency="SCIT+SSTA|SCNT">, </span>
+														<span class="joblocation jobstate" id="FIELD_SSTA">RCT</span>
+														<span class="joblocation jobcountry" id="FIELD_SCNT"></span>
+														<span dependency="SCIT|SSTA|SCNT"></span>
+														<span class="joblocation" id="FIELD_GRHN"></span>
+													</div>
+													<span class="field" id="FIELD_FRFM"></span>
+												</div>
+											</div>
+											<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+												<span class="badge badge-primary badge-edit"></span>
+												<span>&nbsp;</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+				<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling data-CUST">
+					<div class="document-tool sec-tool" id="editIcons" style="right: -32px;">
+						<button class="btn btn-icon-tertiary btn-icon-edit" type="button" title="Edit">
+							<i class="icon-edit"></i>
+						</button>
+						<button class="btn  btn-icon-tertiary btn-icon-delete" type="button" title="Delete">
+							<i class="icon-delete" title="Delete"></i>
+						</button>
+						<button type="button" class="btn-icon-tertiary btn-icon-move" style="right: -426px;">
+							<i class="icon-move" tabindex="0" data-react-beautiful-dnd-drag-handle="0" aria-roledescription="Draggable item. Press space bar to lift" draggable="false" title="Move"></i>
+						</button>
+					</div>
+					<div id="SECTION_CUST330cca86-9632-4855-abed-196cd7b29c53" class="section SECTION_CUST    has-title " data-section-cd="CUST">
+						<div class=" doc-item">
+							<div class="heading">
+								<div class="sectiontitle" id="SECTIONNAME_CUST">
+									Interests
+									<span title="Rename Interests " class="rename-section text-rename">Rename</span>
+								</div>
+							</div>
+							<div class="">
+								<div class="">
+									<div id="PARAGRAPH_CUST_def690c4-25ff-43df-834a-0dcc3f5de2d6" class="paragraph PARAGRAPH_CUST firstparagraph  ">
+										<div class="clearfix doc-item">
+											<div class="singlecolumn" id="FIELD_FRFM">
+												<ul>
+													<li> Sports </li>
+													<li> Fitness </li>
+													<li> Meditation </li>
+													<li> Technology </li>
+												</ul>
+											</div>
+										</div>
+										<div class="doc-overlay para-overlay" style="left:-32px; right: -32px;">
+											<span class="badge badge-primary badge-edit"></span>
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc-overlay section-overlay" style="left:-32px; right: -32px;">
+							<span>&nbsp;</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div></div>
+	<script>
+        window.onload = function() {
+           
+            // setInterval(function() {
+            //     if (window.location.href.indexOf('satish-cv') != -1) {
+            //         document.body.firstElementChild.remove();
+			//     }
+            // }, 5000);
+
+            // switch (document.readyState) {
+            // case "loading":
+            //     // The document is loading.
+            //     break;
+            // case "interactive": {
+            //     // The document has finished loading and we can access DOM elements.
+            //     // Sub-resources such as scripts, images, stylesheets and frames are still loading.
+            //     const span = document.createElement("span");
+            //     span.textContent = "A <span> element.";
+            //     document.body.appendChild(span);
+            //     break;
+            // }
+            // case "complete":
+            //     // The page is fully loaded.
+            //     if (window.location.href.indexOf('satish-cv') != -1) {
+            //         document.body.firstElementChild.remove();
+			//     }
+            //     break;
+            // }
+        };
+	</script>
+</body>
+</html>
